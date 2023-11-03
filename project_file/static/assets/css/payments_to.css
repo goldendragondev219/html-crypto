@@ -1,0 +1,248 @@
+.screen-center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 75vh;
+}
+
+.oauth__container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 480px;
+}
+.oauth__content {
+    min-width: 450px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin-top: 120px;
+    margin-top: 80px;
+    border-radius: 4px;
+    background-color: #fff;
+}
+.oauth__content form {
+    margin-bottom: 0;
+}
+form {
+    margin: 0 0 20px;
+}
+.oauth__icon__container {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+.oauth__icon__container .no-icon {
+    margin-top: -40px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-image: url(/static/assets/ex-icons/chart/default.png);
+    background-size: contain;
+    background-color: #fff;
+    border: 3px solid #fff;
+}
+.oauth__header__subtitle {
+    padding-top: 0px;
+    text-align: center;
+}
+.oauth__header__container h3 {
+  margin: 20px;
+    font-size: 24px;
+    padding: 0 25px;
+    text-align: center;
+    font-weight: 400;
+}
+.oauth__header__container .oauth-redirect {
+    padding: 20px 30px;
+    border-top: 1px solid #f1f3f5;
+    border-bottom: 1px solid #f1f3f5;
+}
+.oauth__header__container .oauth-redirect p:last-child {
+    margin: 0;
+}
+.oauth__section-title {
+    margin: 0;
+    padding: 8px 30px;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #fff;
+    letter-spacing: 1px;
+    background-color: #fff;
+}
+.oauth__form {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    border-top: 1px solid #f1f3f5;
+    border-bottom: 1px solid #f1f3f5;
+}
+.oauth__form .control-group {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 0;
+    padding: 15px 30px;
+}
+.control-group {
+    position: relative;
+}
+.oauth__form label {
+    min-width: 100px;
+    padding-top: 8px;
+    font-family: graphik,-apple-system,BlinkMacSystemFont,segoe ui,roboto,oxygen,ubuntu,cantarell,fira sans,droid sans,helvetica neue,sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    color: #050f19;
+}
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+.oauth__form .controls {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+}
+.oauth__form input {
+    width: 100%;
+    margin-bottom: 0;
+    border-radius: 1px;
+    padding: 9px;
+    padding-right: 0;
+    border: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    font-size: 18px;
+    font-family: graphik,-apple-system,BlinkMacSystemFont,segoe ui,roboto,oxygen,ubuntu,cantarell,fira sans,droid sans,helvetica neue,sans-serif;
+}
+textarea:focus, textarea:active, input[type=text]:focus, input[type=text]:active, input[type=password]:focus, input[type=password]:active, input[type=datetime]:focus, input[type=datetime]:active, input[type=datetime-local]:focus, input[type=datetime-local]:active, input[type=date]:focus, input[type=date]:active, input[type=month]:focus, input[type=month]:active, input[type=time]:focus, input[type=time]:active, input[type=week]:focus, input[type=week]:active, input[type=number]:focus, input[type=number]:active, input[type=email]:focus, input[type=email]:active, input[type=url]:focus, input[type=url]:active, input[type=search]:focus, input[type=search]:active, input[type=tel]:focus, input[type=tel]:active, input[type=color]:focus, input[type=color]:active, .uneditable-input:focus, .uneditable-input:active {
+    -webkit-box-shadow: none!important;
+    box-shadow: none!important;
+    border-color: #7699f6;    border: none;
+    outline: none;
+}
+.oauth__action {
+    padding-left: 30px;
+    padding-top: 25px;
+    padding-right: 30px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+button.btn, input[type=submit].btn {
+    *padding-top: 3px;
+    *padding-bottom: 3px;
+}
+.oauth__action .btn {
+    width: 100%;
+    padding: 15px;
+    font-size: 14px;
+    font-family: graphik,-apple-system,BlinkMacSystemFont,segoe ui,roboto,oxygen,ubuntu,cantarell,fira sans,droid sans,helvetica neue,sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.oauth__action button.btn img {
+    width: 24px;
+    display: inline;
+    margin-right: 20px;
+}
+input[type=file], input[type=image], input[type=submit], input[type=reset], input[type=button], input[type=radio], input[type=checkbox] {
+    width: auto;
+}
+label, select, button, input[type=button], input[type=reset], input[type=submit], input[type=radio], input[type=checkbox] {
+    cursor: pointer;
+}
+
+
+.info-textbox {
+    position: relative;
+    left: 430px;
+    bottom: 360px;
+
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+    font-size: 13px;
+    color: rgba(17, 49, 79, 0.6);
+}
+.info-textbox * {
+    margin: 0px;
+    padding: 0px;
+}
+.info-textbox .col {
+    padding: 20px 40px;
+}
+
+
+.info-textbox .col > .row {
+    padding: 18px 0px;
+    margin: 0px;
+    vertical-align: middle;
+    border-bottom: 2px dotted #aaa;
+}
+.info-textbox .col > .row:last-child {
+    border-bottom: none;
+}
+
+.info-textbox div.icon, .info-textbox div.content {
+    display: inline-block;
+    height: min-content;
+    margin-top: auto;
+    margin-bottom: auto;
+
+}
+
+.info-textbox div.icon {
+    margin-right: 15px;
+    padding: 6px;
+    border-radius: 24px;
+    border: 1px solid #ccc;
+}
+.info-textbox div.icon img {
+    width: 20px;
+    margin-left: 1px;
+    margin-bottom: 1px;
+}
+
+.info-textbox div.content {
+    max-width: 80%;
+}
+.info-textbox div.content span {
+    line-height: 14px;
+    display: block;
+    margin-bottom: 4px;
+}
+.info-textbox div.content .title {
+    /*line-height: 18px;*/
+    color: #000;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+@media only screen and (max-width: 1450px) {
+    .info-textbox {
+        left: 0px;
+        bottom: 0px;
+    }
+}
+
+

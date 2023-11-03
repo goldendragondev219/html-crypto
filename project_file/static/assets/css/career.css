@@ -1,0 +1,181 @@
+/*Style for 3 tabs start from here*/
+
+
+.content-div {
+	width:95%;
+	margin:0 auto;
+	max-height:100px; /*100px*/
+	border-top: 3px solid #fff;
+	border-bottom: 3px solid #fff;
+	margin-top:40px;
+	transition: max-height 2s;
+	font-family: 'Rubik', sans-serif;
+	overflow:hidden;
+}
+.sub-div {
+	float:left;
+}
+.content-div p {
+	font-size:24px;
+	margin-top:35px;
+}
+.first-p {
+	float:left;
+	margin-left:20px;
+}
+.second-p, .third-p {
+	float:right;
+	margin-right:45px;
+}
+.after-ones {
+	margin-top:0;
+	border-top: 0px solid #fff;
+}
+.second-p {
+	cursor:pointer;
+	transition:color 1s;
+}
+.moreP p, .moreP2 p {
+	font-size:19px;
+	font-family: 'Rubik', sans-serif;
+	margin-left:50px;
+}
+.moreP p:first-of-type, .moreP2 p:first-of-type {
+	font-size:21px;
+	font-weight:700;
+	text-align:center;
+	border-bottom:1px solid #fff;
+}
+#info11,#info22,#info33,#info44,#info55,#info66,#info77 {
+	margin-right:-75px;
+	display:none;
+}
+span {
+	border-bottom:1px solid #fff;
+	font-size:21px;
+	font-weight:700;
+}
+i {
+	animation: move 2s infinite;
+	margin-top:10px;
+	cursor:pointer;
+}
+.i-div { 
+  height:100px;
+  width:50px;
+  float:right;
+ }
+.contact-div {
+	width:95%;
+	margin-left:5%;
+	height:auto;
+}
+.contact-div button {
+	text-align:center;
+	display:block;
+	margin:0 auto;
+	margin-top:-36px;
+	padding:10px 28px;
+	background:#fff;
+	border:1px solid #fff;
+	text-transform:uppercase;
+	font-size:15px;
+	font-weight:600;
+	color:#0a53ff;
+	border-radius:8px;
+	cursor:pointer;
+	transition: border-radius 1s;
+	letter-spacing:2px;
+}
+.contact-div button:hover {
+	border-radius:1px;
+}
+.contact-div h1 {
+	float:left;
+	font-size:36px;
+	margin-top:120px;
+	line-height:70px;
+	margin-left:120px;
+}
+.sub-contact-div {
+	float:right;
+	width:30%;
+	text-align:left;
+	margin-top:150px;
+	margin-right:200px;
+}
+.sub-contact-div p {
+	margin:0;
+	text-transform:uppercase;
+	font-size:21px;
+	font-weight:600;
+	line-height:33px;
+}
+.contact-div span {
+	color:#F0F0F0;
+	border-bottom: 0px;
+	font-weight:normal;
+	opacity:.7;
+}
+.clearfix::after {
+	clear:both;
+}
+@keyframes move {
+	0% {margin-top:30px;}
+	50% {margin-top:20px;}
+	100% {margin-top:30px;}
+}
+@media only screen and (max-width:1300px){
+	.contact-div { width:100%;}
+	.contact-div h1 { margin-left:20px;}
+	.sub-contact-div  p {margin-right:50px;}
+	.sub-contact-div {width:15%;}
+}
+@media only screen and (max-width:1034px){
+	span {font-size:20px;}
+	.moreP p::first-letter, .moreP2 p::first-letter {font-size:24px;}
+	.moreP p:first-of-type, .moreP2 p:first-of-type {font-size:21px;margin-top:50px;padding-bottom:20px;}
+	.moreP {padding-bottom:60px;}
+	.moreP p, .moreP2 p {font-size:17px;}
+	.content-div p {font-size:21px;}
+	.heading-div h1 {font-size:25px;}
+}
+@media only screen and (max-width:830px){
+	.sub-contact-div p, .sub-contact-div a, .sub-contact-div span {margin-right:0;width:60%;}
+	.sub-contact-div {width:100%;}
+}
+@media only screen and (max-width:768px){
+	.moreP p, .moreP2 p { margin-left:5px; }
+	span {font-size:18px;}
+	.moreP p::first-letter, .moreP2 p::first-letter {font-size:21px;}
+	.moreP p:first-of-type, .moreP2 p:first-of-type {font-size:18px;}
+	.moreP {padding-bottom:60px;}
+	.moreP p, .moreP2 p {font-size:14px;}
+	.content-div p {font-size:18px;}
+	.heading-div h1 {font-size:21px;}
+}
+@media only screen and (max-width:640px){
+	.first-p {width:55%;}
+	.third-p {float:left;margin-left:20px;}
+	.content-div p {margin-top:5px;}
+	.contact-div h1 {font-size:30px;}
+	.content-div p {margin-top:20px;} 
+	.sub-contact-div p {line-height:12px;}
+}	
+@media only screen and (max-width:465px){
+	.moreP p, .moreP2 p { margin-left:5px; }
+	span {font-size:15px;}
+	.moreP p::first-letter, .moreP2 p::first-letter {font-size:17px;}
+	.moreP p:first-of-type, .moreP2 p:first-of-type {font-size:14px;}
+	.moreP {padding-bottom:60px;}
+	.moreP p, .moreP2 p {font-size:11px;}
+	.content-div p {font-size:14px;}
+	.heading-div h1 {font-size:19px;width:70%;float:left;margin-left:13%;}
+	.contact-div h1 {font-size:25px;line-height:30px;}
+	.sub-contact-div p {line-height:12px; font-size:18px;}
+	i {font-size:40px  !important}
+}
+@media only screen and (max-width:830px){
+	.contact-div h1 { width:100%;}
+	.sub-contact-div {margin-right:0;margin-top:10px;float:left;margin-left:20px;}
+}

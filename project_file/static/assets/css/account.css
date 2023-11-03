@@ -1,0 +1,260 @@
+.btn-addaccount {
+  color: #fff;
+  font-weight: 500;
+  padding: 10px 25px;
+  background-color: #988edf;
+}
+
+.btn-hidden {
+  color: #707a83;
+  font-weight: 500;
+  border: 1px solid #707a83;
+  padding: 6px 13px;
+  background-color: #f9f9f9 !important;
+}
+
+.search-font {
+  color: #707a83;
+  font-size: 20px;
+  font-weight: 600;
+  margin-left: 20px;
+}
+
+.dropbtn {
+  background-color: white;
+  color: #988edf;
+  padding: 16px;
+  font-size: 18px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: white;
+}
+
+.stepper-wrapper {
+  margin-top: auto;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.stepper-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+
+  @media (max-width: 768px) {
+    font-size: 12px;
+  }
+}
+
+.stepper-item::before {
+  position: absolute;
+  content: "";
+  border-bottom: 2px solid #ccc;
+  width: 100%;
+  top: 20px;
+  left: -50%;
+  z-index: 2;
+}
+
+.stepper-item::after {
+  position: absolute;
+  content: "";
+  border-bottom: 2px solid #ccc;
+  width: 100%;
+  top: 20px;
+  left: 50%;
+  z-index: 2;
+}
+
+.stepper-item .step-counter {
+  position: relative;
+  z-index: 5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: white;
+  margin-bottom: 6px;
+  border: 1px solid#B8BDC1;
+}
+
+.stepper-item.active {
+  font-weight: bold;
+}
+
+.stepper-item.completed .step-counter {
+  background-color: #8b80db;
+}
+
+.stepper-item.completed::after {
+  position: absolute;
+  content: "";
+  border-bottom: 2px solid #8b80db;
+  width: 100%;
+  top: 20px;
+  left: 50%;
+  z-index: 3;
+}
+
+.stepper-item:first-child::before {
+  content: none;
+}
+.stepper-item:last-child::after {
+  content: none;
+}
+
+.step-name {
+  color: #b8bdc1;
+}
+
+.step-name.completed {
+  color: #8b80db;
+}
+
+.step-counter {
+  color: B8BDC1;
+}
+
+.modal2-title {
+  font-weight: 900;
+  font-size: 24px;
+  border-bottom: 1px solid #EFF1F4;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+
+.modal2-text {
+  margin-top: 20px;
+  font-weight: 600;
+  font-size: 16px;
+  color: #4e5c6e;
+}
+
+.modal3-text {
+  font-weight: 600;
+
+  font-size: 16px;
+  color: #4e5c6e;
+}
+
+.modal3-button1 {
+  color: white;
+  width: 100%;
+  padding: 15px;
+  background-color: #1348d2;
+  font-weight: 600;
+  margin-top: 100px;
+}
+
+.modal3-button2 {
+  color: #1348d2;
+  width: 100%;
+  padding: 15px;
+  background-color: white;
+  font-weight: 600;
+}
+
+.accordion {
+        background-color: #191919;
+        color: #E7E7E7;
+        cursor: pointer;
+        padding: 24px;
+        width: 100%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 15px;
+        transition: 0.4s;
+        margin-bottom: 20px;
+        border-radius: 10px;
+      }
+      
+      .active, .accordion:hover {
+        background-color: #191919;
+      }
+      
+      .accordion:before {
+        margin-top: 13px;
+        content: '\002B';
+        color: #E7E7E7;
+        font-weight: bold;
+        float: right;
+        margin-left: 5px;
+        font-size: 24px;
+      }
+      
+      .active:before {
+        margin-top: 13px;
+        content: "\2212";
+      }
+      
+      .panel {
+        padding: 0 18px;
+        background-color: #191919;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+      }
+
+      .faq {
+        background-color: #131214;
+      }
+
+      .faq-wrap {
+        margin: 50px 88px 32px;
+      }
+
+      .accordion-uptext {
+        font-size: 20px;
+        font-weight: 600;
+      }
+
+      .accordion-downtext {
+        font-size: 16px;
+        font-weight: 400;
+      }
+
+      .accordion-context {
+        color: #E7E7E7;
+      }
+
+      .subtext {
+        font-size: 16px;
+        font-weight: 400;
+        color: #E7E7E7;
+      }

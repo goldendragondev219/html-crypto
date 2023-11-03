@@ -1,0 +1,305 @@
+
+
+#converter-main-container {
+    color:rgb(86, 90, 105);
+    padding: 1rem;
+    font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Ubuntu,sans-serif;;
+    font-variant-numeric: slashed-zero;
+    display:flex;
+    flex-direction: column;
+    row-gap: 60px;
+    align-items: center;
+    height: 350px;
+}
+
+.tabs-container {
+    box-sizing: border-box;
+    margin: 0px;
+    min-width: 0px;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: start;
+    justify-content: center;
+    justify-self: center;
+    background-color: rgb(255, 255, 255);
+    width: fit-content;
+    height: 42px;
+    padding: 4px;
+    border-radius: 16px;
+    display: grid;
+    grid-auto-flow: column;
+    gap: 10px;
+}
+
+.tab {
+    cursor: pointer;
+    padding: 8px 12px;
+    color: rgb(86, 90, 105);
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.tab:hover {
+    color: black;
+}
+
+.tab.active {
+    border-radius:12px;
+    background-color: rgb(237, 238, 242);
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Ubuntu,sans-serif;
+    font-size: 16px;
+    color: black;
+}
+
+.chart{
+    display: flex;
+}
+
+.chart:hover {
+    text-decoration: underline;
+}
+
+.chart-arrow-container{
+    height: 0;
+    width: 0;
+}
+
+.tab.chart-arrow {
+    position: relative;
+    font-size:11px;
+    right:22px;
+    top:6px;
+}
+
+.converter-container {
+    position: relative;
+    /* Adjust converter container width */
+    max-width: 850px;
+    width: 100%;
+    background: rgb(255, 255, 255);
+    box-shadow: rgb(0 0 0 / 1%) 0px 0px 1px, rgb(0 0 0 / 4%) 0px 4px 8px, rgb(0 0 0 / 4%) 0px 16px 24px, rgb(0 0 0 / 1%) 0px 24px 32px;
+    border-radius: 24px;
+    margin-top: 1rem;
+}
+
+.converter-content {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    padding: 20px 10px 0px 10px;
+}
+
+.converter-inputs-container {
+    display:block;
+    column-gap: 3px;
+}
+
+
+@media only screen and (max-width: 480px){
+.converter-input-label-container{
+    display:block;
+
+}}
+
+.grow {
+    flex-grow: 1;
+}
+
+.swap-label {
+    align-self: flex-start;
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    margin-left: 12px;
+    margin-bottom: 10px;
+}
+
+.converter-swap-button {
+    padding: 16px;
+    width: 100%;
+    font-weight: 500;
+    text-align: center;
+    border-radius: 20px;
+    outline: none;
+    border: 1px solid transparent;
+    text-decoration: none;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    -webkit-box-align: center;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    will-change: transform;
+    transition: transform 450ms ease 0s;
+    transform: perspective(1px) translateZ(0px);
+    background-color: #000;
+    color: white;
+    color: #fff;
+    font-size:16px;
+}
+
+.converter-swap-button:focus {
+    border: 3px solid #C1E0F2;
+    box-shadow:none !important;
+    outline: none !important;
+}
+
+.converter-swap-button:hover {
+    background-color: #343434;
+}
+
+.converter-swap-button:active {
+    box-shadow: rgb(252, 220, 232) 0px 0px 0px 1pt;
+    background-color: #343434;
+}
+
+.converter-input-main-container {
+    border-radius: 20px;
+    padding:20px;
+    height: 90px;
+    width:100%;
+    display: flex;
+    column-gap: 10px;
+
+    border-radius: 20px;
+    border: 1px solid rgb(237, 238, 242);
+    background-color: rgb(247, 248, 250);
+    width: initial;
+}
+
+.converter-input-main-container:hover {
+    border: 1px solid rgb(206, 208, 217);
+}
+
+.converter-input-container {
+    display:flex;
+    column-gap: 10px;
+    width: 100%;
+}
+
+.converter-input-label-container {
+    display:flex;
+    column-gap: 10px;
+    text-align: center;
+    flex-wrap: nowrap;
+    z-index: 1;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border-radius: 16px;
+    box-shadow: rgb(0 0 0 / 8%) 0px 6px 10px;
+    outline: none;
+    cursor: pointer;
+    user-select: none;
+    border: none;
+    height: 2.4rem;
+    max-width: 115px;
+    padding: 0px 8px;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    margin-right: 12px;
+}
+
+.converter-input-label-container:hover {
+    background-color: rgb(237, 238, 242);
+}
+
+.converter-input {
+    width: 100%;
+    height: 30px;
+    float: right;
+    text-align:left;
+    /* Firefox */
+    -moz-appearance:textfield !important;
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+    outline: none;
+    border: none;
+    background-color: rgb(247, 248, 250);
+    font-size: 24px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 0px;
+    appearance: textfield;
+    text-align: right;
+}
+
+/* Chrome, Safari, Edge, Opera */
+.converter-input::-webkit-inner-spin-button, .no-spin::-webkit-outer-spin-button {
+    -webkit-appearance: none !important;
+    margin: 0 !important;
+}
+
+.converter-input:focus {
+    outline: none;
+}
+
+.converter-input-label-icon {
+    height: 24px;
+    width: 24px;
+    border-radius:50px;
+}
+
+  .arrow-down {
+    position: relative;
+    left: -18px;
+    top: -2px;
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+  /*   border-right: 2px solid black;
+    border-top: 2px solid black;
+     */
+    transform: rotate(135deg);
+    margin-right: 10px;
+    margin-left: 1.0em;
+  }
+
+  .conversion-rate-container {
+    display: flex;
+    column-gap: 10px;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .conversion-rate-label{
+    font-family: "Inter-SemiBold", sans-serif;
+    margin: 0px;
+    min-width: 0px;
+    font-weight: 500;
+    font-size: 14px;
+    color: rgb(0, 0, 0);
+    margin-right:10px;
+  }
+
+  .converter-arrow--main-indicator-container{
+    height: 0px;
+    width: 0px;
+    padding-left:50%;
+  }
+
+  .converter-arrow-indicator-container {
+    padding: 1.5px;
+    border-radius: 12px;
+    height: 32px;
+    width: 32px;
+    position: relative;
+    top:10px;
+    margin-top: -14px;
+    margin-bottom: -14px;
+    left: calc(50% - 16px);
+    background-color: rgb(247, 248, 250);
+    border: 4px solid rgb(255, 255, 255);
+    z-index: 2;
+    transform: rotate(270deg);
+  }
+
+  .converter-arrow-indicator-container:hover {
+      border: 4px solid rgba(255, 255, 255,0.8);
+  }

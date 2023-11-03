@@ -1,0 +1,174 @@
+body {
+    font-family: -apple-system,BlinkMacSystemFont,segoe ui,Roboto,helvetica neue,Arial,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol;
+}
+
+#custom-area {
+    width: 100%
+}
+
+.apexcharts-xaxistooltip {
+    display: none;
+}
+
+.apexcharts-xcrosshairs {
+    /*stroke-linecap: round;*/
+    stroke-width: 2px;
+    stroke-dasharray: 0;
+    stroke: #5466f9;
+}
+
+
+.apexcharts-marker {
+    transition: none !important;
+}
+
+.arrow_box {
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+
+.arrow_box p {
+    margin: 5px 0;
+    display: flex;
+    align-items: center;
+}
+
+.arrow_box svg {
+    margin-right: 4px;
+    margin-left: 4px;
+}
+.arrow_box .price {
+   display: flex;
+   align-items: center;
+}
+
+.apexcharts-tooltip {
+    top: 100px !important;
+    background-color: transparent !important;
+    border: none !important;
+    color:#fff;
+}
+
+.data-area {
+    display: flex;
+    justify-content: space-between;
+    margin-left:2rem;
+    margin-right:2rem;
+}
+
+.data-area h4 {
+    display: flex;
+    align-items: center;
+}
+
+#days {
+    border: none;
+    padding: 10px;
+}
+
+#days:hover {
+    cursor: pointer;
+    border-radius: 30px;
+}
+
+#days:focus-visible {
+    outline: none;
+}
+
+#days option {
+    padding: 10px;
+}
+
+.select-hidden {
+    display: none;
+    visibility: hidden;
+    padding-right: 10px;
+}
+
+.select {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    font-size: 16px;
+    color: #fff;
+    width: 100px;
+    height: 40px;
+    float:right;
+}
+
+.select-styled {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    color: black;
+    /*background-color: #c0392b;*/
+    padding: 8px 15px;
+    border-radius:30px;
+    font-weight:600;
+    font-size:15px;
+}
+
+.select-styled:after {
+    content: "";
+    width: 0;
+    height: 0;
+    border: 5px solid transparent;
+    border-color: #000 transparent transparent transparent;
+    position: absolute;
+    top: 18px;
+    right: 8px;
+}
+
+.select-styled:hover {
+    background-color: #dfe8f8;
+}
+
+.select-options {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    z-index: 999;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: rgba(138, 138, 138, 0.35) 0px 5px 15px
+
+}
+
+.select-options li {
+    margin: 0;
+    font-size:15px;
+    color: rgb(26, 26, 26);
+    padding: 12px 0;
+    text-indent: 15px;
+    border-top: 1px solid rgb(253, 253, 253);
+}
+
+.select-options li:hover,
+.select-options li.is-selected {
+    color: #110909;
+    background: #dfe8f8;
+}
+
+      .days_len{
+        margin-left:2rem;
+        color:#5a5a5b;
+        cursor:pointer;
+        font-weight:500;
+      }
+
+      .days_len:hover{
+        color:#000;
+      }
+      .apexcharts-text tspan{
+        color:#aaa9a9 !important;
+font-weight:600;
+      }

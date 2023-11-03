@@ -1,0 +1,117 @@
+
+.configureModal .button
+{
+    margin:auto !important;
+    margin-top:15px !important;
+    width:150px !important;
+}
+.modal-body{
+    background-color:#fff !important;
+    margin:auto !important;
+}
+.modal-lg, .modal-xl
+{
+    max-width:700px !important;
+}
+.modal-header
+{
+    display:block;
+}
+.configure_button{
+    background-color:#000 !important;
+    border:none !important;
+
+}
+.configureModal .inputs
+{
+    min-height:35px;
+
+border-radius:5px;
+}
+.yellow{
+    background-color:#fff0b5 !important;
+    border-radius:10px;
+    padding:.4rem !important;
+}
+        .configureModal .modal-content
+        {
+            border-radius:25px;
+            padding:45px !important;
+            padding-bottom:30px !important;
+        }
+        .configureModal .title{
+
+            font-size:18px;
+            display:block;
+
+        }
+.configureModal .modal-content
+{
+    border-radius:15px;
+    padding:0px !important;
+    padding-bottom:10px !important;
+
+    }
+    .panel-inner{
+        padding:16px 8px !important;
+        border:1px solid #eae8e8 !important;
+    }
+
+    .delete_button{
+        background-color: #ffffff;height: 35px; margin-right:30px;padding: 0.3em 1em;border: 1px solid rgb(207, 207, 207) !important;flex-direction: row;border-radius: 5px;;border-radius: 16px;
+    max-height:35px;
+    }
+    .crypto_wallet{
+        background-color: #2056e7;height: 35px; margin-right:10px;padding: 0.3em 1em;border: 1px solid #2056e7!important;flex-direction: row;border-radius: 5px; margin-bottom:10px; border-radius:20px;
+    }
+
+.configureModal .modal-content{
+width:67%;
+margin-top:25%;
+}
+.col-md-3{
+    flex: 0 0 100%;
+    max-width:100%;
+
+}
+.addproductForm{
+    min-width:100%;
+}
+.configureModal .inputs
+{
+    border-radius:15px;
+    margin-top:.5rem;
+}
+.configureModal .button
+{
+    padding:8px;
+    border-radius:20px;
+}
+
+
+.formlabel {
+ font-size:15px;
+ line-height:28px;
+ padding:10px 16px;
+ width:100%;
+ min-height:44px;
+ border:unset;
+ border-radius:4px;
+ background-color:#fff;
+ border:1.5px solid rgba(0,0,0,.2);
+ transition:all .3s ease
+}
+.formlabel:focus {
+ box-shadow:0 0 1px 3px #a8ceea;
+ border-color:none!important;
+ border:none!important;
+ outline:none
+}
+.formlabel[type=submit] {
+ background-color:#0351fd;
+ color:#fff;
+ font-weight:600;
+ cursor:pointer;
+ outline:none;
+ border:none
+}

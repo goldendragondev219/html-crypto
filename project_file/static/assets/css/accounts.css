@@ -1,0 +1,125 @@
+#main-wrapper {
+	padding-top: 0px;
+}
+
+.screen-center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+}
+
+.col-login-logo {
+	display: inline-block;
+	padding-right: 32px;
+	width: 580px;
+	vertical-align: top;
+}
+
+.col-login-logo span {
+	color: #1a1f36;
+	font-size: 28px;
+}
+
+.logo-container {
+	padding: 112px 0 16px;
+}
+
+.col-login-form {
+	display: inline-block;
+	/*margin-top: 40px;*/
+
+}
+
+@media only screen and (max-width: 980px) {
+	.col-login-logo {
+		display: block;
+		padding-left: 32px;
+		max-width: 480px;
+		width: 100%;
+	}
+	.col-login-logo .logo-text {
+		display: none;
+	}
+	.logo-container {
+		padding: 16px 0px 16px;
+	    margin-left: auto;
+	    margin-right: auto;
+		width: min-content;
+	}
+}
+
+.card-login {
+	height: max-content;
+	width: 396px;
+	border-radius: 8px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
+}
+
+.card-login .form-group {
+	margin-bottom: 12px;
+}
+
+.form-row .form-group {
+	margin-bottom: 0px;
+}
+
+.card-login input {
+	font-weight: normal !important;
+	height: 52px;
+	padding: 0px 16px !important;
+}
+
+div.card-body {
+	padding: 16px !important;
+	padding-bottom: 24px !important;
+}
+
+.login-button {
+	width: 100%;
+	font-size: 20px;
+	line-height: 46px;
+	padding: 0px;
+	margin: 0px;
+	margin-bottom: 14px !important;
+}
+
+.hr {
+	margin: 17px 0px;
+	border-bottom: 1px solid #dadde1;
+}
+
+.new-account {
+	padding-top: 9px;
+}
+
+.new-account div {
+	width: 100%;
+	font-size: 15px;
+	text-align: center;
+}
+
+.new-account a {
+	margin: 0px;
+	font-size: 17px;
+	line-height: 46px;
+	padding: 0px 16px;
+	background-color: #42b72a;
+	color: white;
+}
+
+.new-account a:hover {
+	background-color: #36a420;
+}
+
+
+.reg_pages_msg {
+	color: #1a1f36;
+	text-align: center;
+}
+
+.reg_pages_msg a {
+	color: #495dfc;
+	font-weight: bold;
+	margin-top: 9px;
+}

@@ -1,0 +1,138 @@
+.base-timer {
+  position: relative;
+  width: 50px;
+  height: 50px;
+}
+
+.base-timer__svg {
+  transform: scaleX(-1);
+}
+
+.base-timer__circle {
+  fill: none;
+  stroke: none;
+}
+
+.base-timer__path-elapsed {
+  stroke-width: 7px;
+  stroke: rgb(160, 160, 160);
+}
+
+.base-timer__path-remaining {
+  stroke-width: 7px;
+  stroke-linecap: round;
+  transform: rotate(90deg);
+  transform-origin: center;
+  transition: 1s linear all;
+  fill-rule: nonzero;
+  stroke: currentColor;
+}
+
+.base-timer__path-remaining.green {
+  color: rgb(30, 81, 221);
+}
+
+.base-timer__path-remaining.orange {
+  color: rgb(255, 0, 0);
+}
+
+.base-timer__path-remaining.red {
+  color: red;
+}
+
+.base-timer__label {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+}
+
+.red-pulse {
+  box-shadow: 0 0 0 0 rgb(255, 0, 0);
+  transform: scale(1);
+  animation: pulse-red 1s infinite;
+}
+
+.blue-pulse {
+  box-shadow: 0 0 0 0 rgb(0, 81, 255);
+  transform: scale(1);
+  animation: pulse-blue 5s infinite;
+}
+
+@keyframes pulse-red {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(255, 0, 0, 0.7);
+  }
+
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 10px rgba(216, 17, 17, 0);
+  }
+
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(116, 54, 54, 0);
+  }
+}
+
+.start-animation {
+  animation: start-anime 4s both;
+  animation-iteration-count: 1;
+}
+
+@keyframes start-anime {
+  0% {
+    transform: scale(2);
+  }
+
+  10% {
+    transform: rotate(180deg);
+  }
+
+  20% {
+    transform: rotate(360deg);
+  }
+
+  70% {
+    transform: scale(1.5);
+  }
+
+  100% {
+    transform: scale(0.95);
+  }
+}
+
+@keyframes pulse-blue {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(0, 0, 255, 0.7);
+  }
+
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 10px rgba(17, 73, 216, 0);
+  }
+
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(58, 54, 116, 0);
+  }
+}
+
+.glass {
+  background-color: rgba(255, 255, 255, 0.25);
+  -webkit-backdrop-filter: blur(15px);
+  backdrop-filter: blur(15px);
+}
+
+.black-glass {
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-backdrop-filter: blur(15px);
+  backdrop-filter: blur(15px);
+  border-radius:38px;
+}

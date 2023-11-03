@@ -1,0 +1,188 @@
+body {
+    background-color: #eee
+}
+
+.chat-btn {
+    position: absolute;
+    right: 20px;
+    bottom: 10px;
+    cursor: pointer
+}
+
+.chat-btn .close {
+    display: none
+}
+
+.chat-btn i {
+    transition: all 0.9s ease
+}
+
+#check:checked~.chat-btn i {
+    display: block;
+    pointer-events: auto;
+    transform: rotate(180deg)
+}
+
+#check:checked~.chat-btn .comment {
+    display: none
+}
+
+.chat-btn i {
+    
+    font-size: 22px;
+    color: #fff !important
+}
+
+.chat-btn {
+    width: 55px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    background-color: #6772e5;
+    color: #fff;
+    font-size: 22px;
+    border: none
+}
+
+
+.wrapper {
+    position: absolute;
+    right: 20px;
+    bottom: 100px;
+    width: 340px;
+    background-color: #fff;
+    border-radius: 5px;
+    opacity: 0;
+    transition: all 0.4s
+}
+
+.header {
+    background-color: #6772e5;
+    padding: 10px;
+    border-radius: 8px 8px 0px 0px;
+    color: #fff
+}
+
+.chat-form {
+    padding: 5px 15px 15px 15px
+}
+
+.chat-form input,
+textarea,
+button {
+    margin-bottom: 10px
+}
+
+.chat-form textarea {
+    resize: none
+}
+
+.form-control:focus,
+.btn:focus {
+    box-shadow: none
+}
+
+#check:checked~.wrapper {
+    opacity: 1
+}
+
+
+.main {
+    background-color: #fff;
+    position: relative;
+    border-radius: 0px 0px 8px 8px;
+    !box-shadow: 0 4px 0px 0 rgba(0, 0, 0, 0.2), 0 6px 0px 0 rgba(0, 0, 0, 0.19);
+    padding: 6px 0px 0px 0px
+}
+
+.scroll {
+    color: #fff;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+    overflow-x:hidden;
+}
+
+.img1 {
+    border-radius: 50%;
+    background-color: #66BB6A
+}
+
+.name {
+    font-size: 11px;
+    font-weight: 500;
+    color: #3e3c3c
+}
+
+.msg {
+    background-color: #1f73b7;
+    font-size: 15px;
+    padding: 8px;
+    border-radius: 15px;
+    font-weight: 500;
+    color: #fff
+}
+
+.between {
+    font-size: 8px;
+    font-weight: 500;
+    color: #a09e9e
+}
+
+.navbar {
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+
+}
+
+.clor {
+    background-color: #ffbf00;
+    }
+
+.form-control {
+    font-size: 12px;
+    font-weight: 400;
+    width: 200px;
+    height: 30px;
+    border: none
+}
+
+form-control: focus {
+    box-shadow: none;
+    overflow: hidden;
+    border: none
+}
+
+.form-control:focus {
+    box-shadow: none !important
+}
+
+.icon1 {
+    color: #7C4DFF !important;
+    font-size: 35px !important;
+    cursor: pointer
+}
+
+.icon2 {
+    color: #1f73b7 !important;
+    font-size: 22px !important;
+    position: relative;
+    left: 8px;
+    bottom: 8px;
+    padding: 0px;
+    cursor: pointer
+}
+
+.icondiv {
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    padding: 2px;
+    position: relative;
+    bottom: 1px
+}
+
+#check {
+    display: none !important
+}

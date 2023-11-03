@@ -1,0 +1,307 @@
+.dashboard{
+    background: transparent;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.requiredText{
+    display: none;
+}
+
+.response{
+    color: #d14338;
+    font-size: 0.73rem;
+    margin: 0;
+    margin-top: 0.2rem;
+    margin-left:3px;
+} 
+.form{
+    /* border: 2px solid red; */
+    /* border: 2px solid red; */
+    margin-top: -0.15rem;
+}
+.form .inputLabel{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+    margin-bottom: 0.35rem;
+}
+.inputLabel{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+.inputLabelFormChange span{
+    font-size: 1rem;
+    font-weight: 600;
+    color: #888787;
+}
+.form input{
+    position: relative;
+    width: 100%;
+    height: 45px;
+    padding: 6px 8px;
+    color: rgba(64, 64, 64, 0.9);
+    font-size: 15px;
+    font-weight:400;
+    line-height: 1.5;
+    border: 0;
+    box-shadow: 0 0 0 1px #e0e0e0, 0 2px 4px 0 rgb(0 0 0 / 7%), 0 1px 1.5px 0 rgb(0 0 0 / 5%);
+    transition: box-shadow .08s ease-in,color .08s ease-in,-webkit-filter 50000s;
+    transition: box-shadow .08s ease-in,color .08s ease-in,filter 50000s;
+    transition: box-shadow .08s ease-in,color .08s ease-in,filter 50000s,-webkit-filter 50000s;
+    background: #fff;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 8px;
+}
+
+.form .selectCountry,
+.form .selectBank{
+    width: 100%;
+    height: 44px;
+    padding: 6px 8px;
+    color: rgba(26,26,26,.9);
+    font-size: 16px;
+    line-height: 1.5;
+    border: 0;
+    box-shadow: 0 0 0 1px #e0e0e0, 0 2px 4px 0 rgb(0 0 0 / 7%), 0 1px 1.5px 0 rgb(0 0 0 / 5%);
+    transition: box-shadow .08s ease-in,color .08s ease-in,-webkit-filter 50000s;
+    transition: box-shadow .08s ease-in,color .08s ease-in,filter 50000s;
+    transition: box-shadow .08s ease-in,color .08s ease-in,filter 50000s,-webkit-filter 50000s;
+    background: #fff;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 8px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.radioBtn{
+    /* visibility: visible !important; */
+    background-color: tomato;
+}
+
+.selectBank,
+.selectCountry{ 
+    padding: 0 !important;
+    position: relative;
+}
+.form .selectCountry select,
+.form .selectBank select{
+    /* width: 100%; */
+    width: 100%;
+    margin: 0;
+    padding: 6px 8px;
+    background-color:#fff;
+    border: none;
+    font-size:14px;
+  
+    /* padding-left: 2.5rem; */
+}
+.form .selectBank select{
+    text-indent: 35px;
+    font-size:14px;
+}
+
+@-moz-document url-prefix() {
+select {
+text-indent: 15px;
+}
+}
+@-moz-document url-prefix() {
+.form .selectBank select {
+text-indent: 15px;
+}
+}
+
+
+ /* form .selectBank #bank *{
+     display: flex;
+    width: 100%;
+    height: 2rem;
+    background-color: red;
+    margin-left: -2rem !important;
+    padding: 0 !important;
+}  */
+/* form .selectBank #bank option imgContainer{
+    width: 1rem;
+    height: 1rem;
+    border: 2px solid blue;
+} */
+/* p{
+    border: 2px solid red !important;
+    margin-left: -2rem !important;
+} */
+.form .selectCountry .iconContainer,
+.form .selectBank .iconContainer{
+    position: absolute;
+    left: 93%;
+    width: 1rem;
+    height: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0rem;
+    box-shadow: none;
+}
+.form .selectBank .iconBankContainer{
+    position: absolute;
+    padding: 2px;
+    margin-left: 10px;
+    width: 1.5rem;
+    height: 1.5rem;
+}
+.form .selectBank .iconBankContainer img{
+    width: 100%;
+    height: 100%;
+}
+.form .selectCountry .iconContainer svg,
+.form .selectBank .iconContainer svg{
+    width: 90%;
+    height: 90%;
+    object-fit: contain;
+}
+.form input:focus{
+    border: 5px solid #C1E0F2;
+    box-shadow: none;
+}
+.formChangeSection{
+    /* margin-top: 2rem; */
+    height: 55px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.physicalProduct,
+.digitalProduct{
+    width: 48%;
+    height: 100%;
+    padding: 8px 12px;
+    color: rgba(26,26,26,.9);
+    font-size: 16px;
+    line-height: 1.5;
+    border: 0;
+    box-shadow: 0 0 0 1px #e0e0e0, 0 2px 4px 0 rgb(0 0 0 / 7%), 0 1px 1.5px 0 rgb(0 0 0 / 5%);
+    transition: box-shadow .08s ease-in,color .08s ease-in,-webkit-filter 50000s;
+    transition: box-shadow .08s ease-in,color .08s ease-in,filter 50000s;
+    transition: box-shadow .08s ease-in,color .08s ease-in,filter 50000s,-webkit-filter 50000s;
+    background: #fff;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 5px;
+    opacity: 0.5;
+    transition: opacity 0.5s ease;
+    cursor: pointer; 
+}
+.activeSection{
+    width: 48%;
+    height: 100%;
+    padding: 8px 12px;
+    color: rgba(26,26,26,.9);
+    font-size: 16px;
+    line-height: 1.5;
+    border: 0;
+    -moz-box-shadow: 0px 0px 0px 3.5px rgba(193,224,242,1);
+    -webkit-box-shadow: 1px 0px 0px 3px rgba(193,224,242,1); 
+    box-shadow: 1px 0px 0px 3px rgba(193,224,242,1);
+    transition: box-shadow .08s ease-in,color .08s ease-in,-webkit-filter 50000s;
+    transition: box-shadow .08s ease-in,color .08s ease-in,filter 50000s;
+    transition: box-shadow .08s ease-in,color .08s ease-in,filter 50000s,-webkit-filter 50000s;
+    background: #fff;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 5px;
+    border: 2px solid black;
+    cursor: pointer;
+}
+.formChangeSection .physicalProduct .imgContainer,
+.formChangeSection .digitalProduct .imgContainer,
+.formChangeSection .activeSection .imgContainer{
+    width: 1rem;
+    height: 1rem;
+}
+.formChangeSection .physicalProduct .imgContainer img,
+.formChangeSection .digitalProduct .imgContainer img,
+.formChangeSection .activeSection .imgContainer img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.cityAndState{
+    display: flex;
+    justify-content: space-between;
+}
+.cityAndState .cityFields,
+.cityAndState .stateFields{
+    width: 48%;
+}
+.form .submitBtn{
+    width: 100%;
+    height: 44px;
+    margin-top: 1rem;
+    border-radius: 8px;
+    font-size: 1.25rem;
+    color: white;
+    font-weight: 600;
+}
+.form-group{
+    display: flex;
+    width: 100% !important;
+    padding: 0 !important;
+    justify-content: center;
+}
+
+/* .openModalButton{
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5rem;
+    width: 100% !important;
+    background-color: black;
+    border-radius: 8px;
+    pointer-events: none;   
+} */
+.openModalButton{
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5rem;
+    width: 100% !important;
+    border-radius: 8px;
+    opacity: 0.6;
+}
+
+/* .openModalButtonEnabled{
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5rem;
+    width: 100% !important;
+    background-color: rgb(0, 0, 0);
+    border-radius: 8px;
+    pointer-events: all !important;  
+    opacity: 1 !important; 
+    transition: all 0.5s ease;
+} */
+.formChangeSection .physicalProduct:hover,
+.formChangeSection .digitalProduct:hover{
+    opacity: 1;
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}

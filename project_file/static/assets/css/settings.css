@@ -1,0 +1,266 @@
+#main-wrapper > .header {
+	padding: 0px 01px;
+}
+.homepage {
+	color: #1a1f36;
+}
+.homepage > .container.col-container {
+	padding-top: 20px;
+}
+
+.homepage button {
+	background-color: transparent;
+	box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.12) 0px 1px 1px 0px, rgba(60, 66, 87, 0.16) 0px 0px 0px 1px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(60, 66, 87, 0.08) 0px 2px 5px 0px;
+	border-radius: 4px;
+	padding: 2px 8px;
+	letter-spacing: 0.03em;
+}
+.homepage select {
+	height: 28px !important;
+	padding: 4px 4px;
+	background-color: white;
+	border: none;
+	box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.12) 0px 1px 1px 0px, rgba(60, 66, 87, 0.16) 0px 0px 0px 1px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(60, 66, 87, 0.08) 0px 2px 5px 0px;
+	margin-top: 5px;
+	margin-bottom: 10px;
+}
+.direction-row {
+	display: flex;
+	flex-direction: row; }
+.direction-col {
+	display: flex;
+	flex-direction: column; }
+.bottom-shadow { box-shadow: inset 0 -1px #e3e8ee; }
+.color-dark { color:#1a1f36; }
+.color-default { color:#3c4257; }
+.grow { flex-grow: 1; }
+
+.box {
+	margin-bottom: 20px;
+}
+.box .header {
+	position: static;
+	display: flex;
+	flex-direction: row;
+	padding-top: 16px;
+	padding-bottom: 12px;
+	box-shadow: inset 0 -1px #e3e8ee;
+}
+.box .header.top-header {
+	padding-top: 16px;
+	padding-bottom: 16px;
+}
+
+.header .title {
+	display: flex;
+	flex-direction: row;
+	font-size: 20px;
+	line-height: 28px;
+	font-weight: bold;
+}
+.header .title.top-title {
+	font-size: 30px;
+	line-height: 34px;
+}
+
+.box .body {
+	padding: 10px 0px;
+	background-color: transparent;
+}
+
+#profile .header .button {
+	margin-left: 10px;
+}
+#profile .header .button.save button {
+	background-color: #495dfc88;
+	color: hsla(0,0%,100%,.75);
+	box-shadow: 0 0 0 1px #7e82d9,0 1px 1px 0 rgba(60,66,87,.1),0 2px 5px 0 rgba(42,47,69,.1),0 1px 2px 0 rgba(0,0,0,.08),0 0 0 0 transparent;
+}
+
+#profile:not(.editing) .header .header-col .cancel,
+#profile:not(.editing) .header .header-col .save,
+#profile:not(.editing) .body .form-group:not(.password) input,
+#profile:not(.editing) .body .form-group.password button,
+#profile.editing .body .form-group:not(.password) span,
+#profile.editing .header .header-col .edit,
+#profile.editing .body .form-group.password span {
+	display: none;
+}
+
+#profile:not(.editing) .body .form-group.password span,
+#profile:not(.editing) .header .header-col .edit,
+#profile:not(.editing) .body .form-group:not(.password) span,
+#profile.editing .body .form-group:not(.password) input,
+#profile.editing .body .form-group.password button,
+#profile.editing .header .header-col .cancel,
+#profile.editing .header .header-col .save {
+	display: block;
+}
+
+#profile.box .body .form-group {
+	margin: 0px;
+	padding: 12px 0px;
+	align-items: center;
+}
+#profile.box .body .form-group label {
+	margin: 0px;
+}
+#profile.box .body .form-group input {
+	width: 100%;
+}
+#profile.box .body .form-group span {
+	padding-left: 8px;
+}
+
+#tsauth .tt-container {
+  position: relative;
+  display: inline-block;
+}
+#tsauth .tt-container .tt {
+  visibility: hidden;
+  width: 200px;
+  background-color: white;
+  border-radius: 4px;
+  z-index: 1;
+  position: absolute;
+  box-shadow: 0 0 3px 2px rgba(136,152,170,.1),0 15px 35px 0 rgba(49,49,93,.1),0 5px 15px 0 rgba(0,0,0,.08);
+  margin-top: 10px;
+  margin-left: -100px;
+}
+
+#tsauth .tt .tt-body {
+	padding: 8px 0px;
+}
+
+#tsauth .tt-container .tt::before {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: 70px;
+  border-width: 8px;
+  border-style: solid;
+  border-color: transparent transparent white transparent;
+}
+
+.tt .tt-body .menu-item button {
+	box-shadow: none;
+	color: #5469d4;
+	width: 100%;
+	text-align: left;
+	font-size: 13.6px;
+	padding: 0px 10px;
+}
+.tt .tt-body .menu-item:hover {
+	background-color: #f7fafc;
+}
+.tt .tt-body .menu-item:hover button {
+	color: #1a1f36;
+}
+
+#language .button > button {
+	background-color: #32325d;
+	color: white;
+}
+
+#email .body {
+	padding: 0px;
+}
+#email .form-check {
+	padding: 12px 0px;
+}
+#email .form-check:hover {
+	background-color: #f7fafc;
+}
+#email .form-check-input {
+	position: static;
+}
+#email input[type=checkbox] {
+	margin: 5px 15px 0px 5px;
+}
+#email .body button {
+	margin-top: 10px;
+	margin-left: 10px;
+}
+#email button.save {
+	background-color: #32325d;
+	color: white;
+}
+
+#accounts .body {
+	padding: 0px;
+}
+#accounts .body table {
+	width: 100%;
+}
+#accounts .body table tr {
+	box-shadow: inset 0 -1px #e3e8ee;
+}
+#accounts .body table thead td {
+	font-size: 10px;
+}
+#accounts .body table td {
+	padding: 8px;
+}
+#accounts .body table tbody {
+	width: 100%;
+}
+#accounts table tbody td.name .text span {
+	white-space: nowrap;
+}
+#accounts table tbody .icon {
+	margin-right: 15px;
+	fill: #a3acb9;
+}
+#accounts table tbody td.button {
+	padding-left: 15px;
+	padding-right: 0px;
+	text-align: right;
+	width: 20px;
+}
+#accounts table tbody td.button button.btn {
+	box-shadow: none;
+	max-width: max-content;
+	min-width: max-content;
+	align-items: center;
+	padding: 4px 10px;
+	line-height: 12px;
+	margin: 0px;
+}
+#accounts table tbody td.button button.btn svg {
+	fill: #3c4257;
+}
+#accounts table tbody td.button button.btn:focus,
+#accounts table tbody td.button button.btn:hover {
+	box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.12) 0px 1px 1px 0px, rgba(60, 66, 87, 0.16) 0px 0px 0px 1px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(60, 66, 87, 0.08) 0px 2px 5px 0px;
+}
+
+#accounts .tt-container {
+  position: relative;
+  display: inline-block;
+}
+#accounts .tt-container .tt {
+  visibility: hidden;
+  width: 150px;
+  background-color: white;
+  border-radius: 4px;
+  z-index: 1;
+  position: absolute;
+  box-shadow: 0 0 3px 2px rgba(136,152,170,.1),0 15px 35px 0 rgba(49,49,93,.1),0 5px 15px 0 rgba(0,0,0,.08);
+  margin-top: 8px;
+  margin-left: -110px;
+}
+#accounts .tt .tt-body {
+	padding: 8px 0px;
+}
+#accounts .tt-container .tt::before {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: 44px;
+  border-width: 8px;
+  border-style: solid;
+  border-color: transparent transparent white transparent;
+}
+

@@ -1,0 +1,196 @@
+
+h1{
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+}
+p {
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+}
+
+.title {
+    border-bottom: 1px solid rgb(236, 239, 241);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.heder-title {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+}
+
+.succeeded {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #cbf4c9;
+    margin-left: 10px;
+    height: 20px;
+    font-size: 15px;
+    padding: 1px 6px;
+    border-radius:4px;
+
+}
+.succeeded > i {
+    margin-left: 5px;
+}
+
+.fa-check {
+    color: #00c52c;
+}
+
+button {
+    width: 100px;
+    height: 35px;
+}
+
+.text-content {
+    display: flex;
+    flex-direction: row;
+}
+
+.text-list {
+    margin: 10px;
+    padding-right: 20px;
+    border-right: 1px solid rgb(236, 239, 241);
+}
+.text-list:last-child {
+    border: none;
+}
+
+.list-title {
+    margin-bottom: 2px;
+    color: #697386;
+    font-size:13px;
+}
+
+.text-number {
+    background-color: #afefdc;
+    border-radius: 50%;
+    font-size: 12px;
+    padding: 2px;
+}
+
+.timeline-wrapper {
+    margin-top: 20px;
+    position: relative;
+}
+
+.payment-wrapper {
+    border-bottom: 1px solid rgb(236, 239, 241);
+    padding-bottom: 20px;
+}
+
+.payment-line {
+    position: absolute;
+    border-left: 1px solid rgb(236, 239, 241);
+    height: 46px;
+    top: 117px;
+    left: 8px;
+}
+
+.payment-list {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+
+.fa-check-circle {
+    color: #00c52c;
+}
+
+.list-date {
+    margin-top: 1px;
+    color: #697386;
+    font-size:14px;
+    letter-spacing:.2px;
+}
+
+.fa-money-check-alt {
+    color: rgb(177 183 187);
+}
+
+.payment-text {
+    margin-left: 20px;;
+}
+
+.payment-details {
+    margin-top: 30px;
+}
+
+.payment-details-items {
+    align-items: center;
+}
+
+.payemnt-details-title {
+    margin-right: 100px;
+    padding: 10px 0;
+    color:#697386;
+    font-size:15px;
+}
+
+.payment-details-wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+.payment-details-value {
+    padding: 10px 0;
+    color:#3c4257;
+    font-size:13px;
+}
+
+.edit {
+    margin-left: 10px;
+    color: #7a7aec;
+}
+
+#fingerprint {
+    color: #7a7aec;
+}
+
+.payment-method {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+
+#payment-details-right {
+    margin-left: 200px;
+}
+
+.error {
+    margin-top: 20px;
+    border: 1px solid rgb(236, 239, 241);
+    padding: 10px;
+    background-color: #f3dfd7;
+}
+
+.fa-exclamation-circle {
+    color:coral;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.customer {
+    margin-top: 20px;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.location {
+    margin-left: 500px;
+}
+
+.customer-wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+#text-provide {
+    color: rgb(174 178 181);
+}

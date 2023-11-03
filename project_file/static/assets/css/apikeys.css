@@ -1,0 +1,80 @@
+body {
+	font-size: 15.5px;
+	line-height: 1.2em;
+}
+.svg-grey { fill: #8792a2; }
+.svg-blue { fill: #495dfc; }
+.font-30 { font-size: 30px; line-height: 1em; }
+.font-20 { font-size: 20px; line-height: 1.2em; }
+.homepage {
+	color: #1a1f36;
+}
+.card {
+	margin-bottom: 20px;
+	min-width: 500px;
+}
+.card .card-header {
+	padding: 20px;
+}
+.card .card-header .title {
+	font-weight: bold;
+}
+.card .card-body {
+	padding: 12px 20px;
+	display: flex;
+	align-items: center;
+}
+.card .card-body .icon {
+	margin-right: 12px;
+}
+.card-body.table-container {
+	padding: 0px;
+}
+table {
+	/*max-width: 100%;*/
+	width: 100%;
+	table-layout: auto;
+}
+table thead {
+	font-size: 11px;
+}
+table thead tr {
+	box-shadow: 0 1px #e3e8ee;
+}
+table th:first-child,
+table td:first-child {
+	padding-left: 12px;
+}
+table thead td::not(.token),
+table tbody td::not(.token) {
+	white-space: nowrap;
+}
+table td.token span {
+	display: block;
+	max-width: 350px;
+	min-width: 100px;
+	font-family: monospace;
+	font-size: 13px;
+	word-break: break-word;
+}
+table td div {
+	padding: 8px;
+}
+table tbody tr td.date {
+	min-width: 92px;
+	max-width: 122px;
+}
+table tbody tr td .button {
+	display: flex;
+	align-items: center;
+}
+table tbody tr td button.btn {
+	padding: 5px;
+	min-width: 32px;
+	width: 32px;
+	min-height: 24px;
+	line-height: 10px;
+}
+table tbody tr td button.btn:hover {
+	box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.12) 0px 1px 1px 0px, rgba(60, 66, 87, 0.16) 0px 0px 0px 1px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(60, 66, 87, 0.08) 0px 3px 9px 0px, rgba(60, 66, 87, 0.08) 0px 2px 5px 0px;
+}

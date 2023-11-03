@@ -1,0 +1,26 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:focus,
+a:active,
+a:hover {
+    outline: 0
+}
+
+ul li,
+ol li {
+    list-style: none;
+}
+
+img {
+  width: 100%;
+}

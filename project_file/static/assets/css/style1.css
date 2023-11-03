@@ -1,0 +1,385 @@
+@charset "utf-8";
+
+body {
+	color: #FFF;
+	font-family: 'Rubik', sans-serif;
+	font-weight: bold;
+	overflow-x:hidden;
+}
+html,body {
+	height:auto;
+}
+.menu-wrapper,
+.wrapper,
+#scene {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	left: 0px;
+	height: 100%;
+	transition:height 1s;
+	overflow:auto;
+}
+
+#scene {
+	right: -100px;
+	transition: transform 0.8s linear;
+}
+
+.layer-bg,
+.layer-list {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+.layer img {
+	position: absolute;
+}
+
+.layer {
+	width: 110%;
+	height: 40%;
+	position: absolute !important;
+}
+
+#scene .layer-list:first-child .layer img {
+	top: 50%;
+	margin-top: -10vw;
+	right: -3.625%;
+	width: 53.75%;
+}
+/* Flo */
+#scene .layer-list:first-child .layer-bg {
+	position: relative;
+}
+#scene .layer-list:first-child .layer-bg img {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	min-width: 100vw;
+	min-height: 100vh;
+	transform: translate(-50%, -50%);
+}
+
+
+#scene .layer-list:nth-child(2) {
+	margin-top: -1px;
+}
+
+#scene .layer-list:nth-child(2) .layer img {
+	top: -130.5625%;
+	right: -22.25%;
+	width: 73.625%;
+}
+
+#scene .layer-list:last-child .layer-bg {
+	background-color: #328EFF;
+}
+
+.wrapper-header {
+	width: 80%;
+	margin: 49px auto 140px;
+	display: -webkit-flex; /* Safari */
+	display: flex;
+	justify-content: flex-end;
+}
+
+.link-wrapper {
+	position: relative;
+	z-index:999999;
+}
+
+.link-wrapper  a {
+	opacity: 0.8;
+	display:inline-block;
+	padding:1px;
+	font-size: 16px;
+	cursor: pointer;
+	margin:0 10px;
+	transition: opacity 0.3s ease;
+	text-decoration:none;
+	color:rgba(255,255,255, .7);
+	text-transform:uppercase;
+	vertical-align:top;
+}
+
+.link-wrapper a:hover {
+	color:rgba(255,255,255, 1);
+}
+
+.link-wrapper a:first-child {
+	margin-right: 10px;
+}
+
+.link-wrapper .animation-bar {
+	position: absolute;
+	bottom: -5px;
+	left: 0px;
+	background-color: #FFF;
+	width: 70px;
+	height: 2px;
+	border-radius: 4px;
+	opacity: 0;
+}
+@media only screen and (max-width:535px){
+	.link-wrapper   a {font-size: 15px;vertical-align:top;}
+	.link-wrapper {width:100%;top:50px;}
+}
+@media only screen and (max-width:435px){
+	.link-wrapper  a {font-size: 14px;margin:0 5px;display:inline-block;vertical-align:top;}
+	.link-wrapper {width:100%;top:50px;}
+}
+@media only screen and (max-width:380px){
+	.link-wrapper  a {font-size: 13px;margin:0 5px;display:inline-block;vertical-align:top;}
+	.link-wrapper {width:100%;top:50px;}
+}
+.wrapper-main {
+
+	width: 80%;
+	max-width: 80vw;
+	position: absolute;
+	top: 50%;
+	left: 10%;
+	margin-top: -267px;
+}
+
+.wrapper-container {
+	max-width: 100%;
+	width: 500px;
+	height: 535px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.wrapper-container > p:first-child {
+	opacity: 0.6;
+	font-size: 14px;
+}
+
+.wrapper-container div p:first-child {
+	font-size: 38px;
+	line-height: 48px;
+	margin-bottom: 15px;
+}
+
+.wrapper-container div a {
+	font-size: 16px;
+	opacity: 0.6;
+	cursor: pointer;
+	transition: opacity 0.3s ease;
+}
+
+.wrapper-container div a:hover {
+	opacity: 1;
+}
+
+.wrapper-container span::before {
+	content: '';
+	display: inline-block;
+	width: 1px;
+	height: 13px;
+	margin: 4px 10px 0px;
+	background-color: #FFF;
+}
+
+.wrapper-container span:first-child::before {
+	display: none;
+}
+
+.wrapper-container span strong {
+	font-size: 22px;
+	margin-right: 2px;
+}
+
+.wrapper-container span b {
+	font-size: 13px;
+	font-weight: lighter;
+}
+
+.tab-trigger {
+	position: absolute;
+	left: 30px;
+	top: 50%;
+	margin-top: -40px;
+	width: 42px;
+	padding: 5px;
+	background-color: rgba(0, 0, 0, 0.1);
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+.tab-trigger div {
+	width: 32px;
+	text-align: center;
+	line-height: 32px;
+	border-radius: 4px;
+	background-color: rgba(255, 255, 255, 0.2);
+	font-size: 16px;
+	margin-top: 5px;
+	transition: background-color 0.3s ease;
+}
+
+.tab-trigger div:first-child {
+	margin-top: 0px;
+}
+
+.tab-trigger div:not(.active):hover {
+	background-color: rgba(255, 255, 255, 0.4);
+}
+
+.tab-trigger .active {
+	background-color: #66F2FF;
+}
+
+.menu {
+	position: absolute;
+	top: 40px;
+	left: 10%;
+	cursor: pointer;
+	z-index: 1;
+	transition: opacity 0.3s ease;
+	font-size: 16px;
+	opacity: 0.8;
+}
+
+.menu:hover {
+	opacity: 1;
+}
+
+.clearfix::before,
+.clearfix::after {
+	display: table;
+	content: '';
+	clear: both;
+}
+
+.menu > * {
+	float: left;
+}
+
+.menu-toggle {
+	width: 20px;
+	margin-right: 10px;
+	margin-top: 5px;
+}
+
+.one,
+.two,
+.three{
+  width: 100%;
+  height: 3px;
+  background: white;
+  margin-bottom: 3px;
+  backface-visibility: hidden;
+  transition-duration: 0.3s;
+}
+
+.three {
+	margin-bottom: 0px;
+}
+
+.on .one {
+	transform: rotate(45deg) translate(4px, 4px);
+}
+
+.on > span {
+	display: none;
+}
+
+.on .two {
+	opacity: 0;
+}
+
+.on .three {
+	transform: rotate(-45deg) translate(4.5px, -4.5px);
+}
+.menu-wrapper {
+	padding-top: 137px;
+	padding-left: calc(10% + 48px);
+	background-color: rgba(26,102,255,0.90);
+	font-size: 20px;
+	display: none;
+}
+
+.menu-list li {
+	float: left;
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+.menu-list a {
+	cursor: pointer;
+	position: relative;
+	opacity: 0.8;
+	transition: opacity 0.3s ease;
+}
+
+.menu-list a::after{
+	content: '';
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	width: 0%;
+	height: 1px;
+	background-color: #FFF;
+	transition: width 0.3s ease;
+}
+
+.menu-list a:hover {
+	opacity: 1;
+}
+
+.menu-list a:hover::after {
+	width: 100%;
+}
+.menu img {
+	position:relative;
+	top:5px;
+}
+.menu {
+	position:absolute;
+	top:25px;
+	left:40px;
+}
+.heading-div h1 {
+	color:#fff;
+	text-align:center;
+	font-size:30px;
+	margin-bottom:30px;
+	font-family: 'Rubik', sans-serif;
+}
+/* Flo */
+@media only screen and (max-width: 768px) {
+	#scene .layer-list:first-child .layer img {
+		margin-top: 0;
+	}
+}
+
+@media only screen and (max-width: 460px) {
+	.link-wrapper a:first-child {
+		margin-right: 15px;
+	}
+}
+@media only screen and (max-width:600px){
+	.wrapper-container { margin-top:75px; }
+	 .menu {
+    position: absolute;
+    top:  5px;
+    left: 20px;
+}
+}
+@media only screen and (max-width:445px){
+	.wrapper-container { 
+    margin-top:80px
+}
+.wrapper-container div p:first-child {
+    font-size: 25px;
+    line-height: 45px;
+    margin-bottom: 13px;
+ }
+
+

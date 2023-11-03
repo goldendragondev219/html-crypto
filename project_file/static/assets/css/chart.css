@@ -1,0 +1,914 @@
+/*body {
+	-webkit-font-smoothing: antialiased;
+	font-family: Graphik, "Graphik LC Web", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif
+}
+*/
+
+
+/* This block fixes unnecessary modal scrollbars */
+
+
+/*body.dashboard {}*/
+.pcoded-wrapper{
+background-color:#f7f9fd !important;
+}
+.poofbox4
+{
+    background-color:#f7f9fd !important;
+}
+poofbox2{
+    background-color:#f7f9fd !important;
+}
+.modal {
+    overflow: hidden !important;
+}
+
+.page_title {
+    max-width: 1800px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: #f7f9fd;
+}
+
+.page_title .container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.title-pad {
+    width: 100%;
+    height: 22px;
+    display: none;
+}
+
+.dash-pad {
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.homepage>.container {
+    width: 100%;
+    max-width: 1800px;
+    /* background-color: #f7f9fd; */
+    flex-direction: column;
+    /* max-height: 500px; */
+}
+
+.col-filler {
+    min-width: 540px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.col-side {
+    display: flex;
+    flex-direction: column;
+    min-width: 500px;
+    width: min-content;
+    height: 100%;
+}
+
+#accordion {
+    color: #3c4257;
+    border: 1px solid #eceff1;
+    border-radius: 4px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    min-width: 1020px;
+}
+
+#accordion .accordion-header {
+    background-color: #fff;
+    color: #000;
+    font-size: 17px;
+    padding: 20px;
+    font-weight: 300;
+    letter-spacing: 0.01em;
+}
+
+#accordion .card {
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    box-shadow: inset 0 1px #eceff1;
+    border-radius: 0px;
+    border: none;
+    transition: background-color 0s;
+}
+
+#accordion .card:hover {
+    background-color: #f7fafc;
+    transition: background-color 0s;
+}
+
+#accordion .card .card-body {
+    padding: 15px;
+}
+
+#accordion .card button {
+    margin: 0px;
+    padding: 5px;
+    color: #5469d4;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+#accordion .card button:focus,
+#accordion .card button:active,
+#accordion .card button:hover {
+    text-decoration: none;
+}
+
+#accordion .card button svg,
+#accordion .card button img {
+    display: inline;
+    width: 12px;
+    margin-right: 20px;
+    fill: #5469d4;
+}
+
+#accordion .card .collapse-body {
+    padding-left: 50px;
+}
+
+#accordion .box-body {
+    background-color: #f8fafc;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+#accordion .collapse-body .description a,
+#accordion .collapse-body .description strong {
+    color: #5469d4;
+    font-weight: normal;
+}
+
+#accordion .collapse-body .button {
+    margin-top: 10px;
+}
+
+#accordion .collapse-body button {
+    background-color: #5469d4;
+    color: white;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+
+/* Graph */
+
+.graph {
+    position: relative;
+    background: white;
+    height: max-content;
+}
+
+.graph-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 32px 16px;
+}
+
+.isLoading .graph-header {
+    opacity: 0;
+}
+
+.graph-price {
+    display: flex;
+    align-items: flex-start;
+    font-weight: 400;
+    color: black;
+}
+
+.graph-price .dollar {
+    font-size: 26px;
+    color: black;
+    font-weight: 500;
+}
+
+.graph-price .integer {
+    font-size: 32px;
+    line-height: 1;
+    color: black;
+    font-weight: 500;
+}
+
+.graph-price .fraction {
+    font-size: 24px;
+    color: black;
+    font-weight: 500;
+}
+
+.graph-price .pro {
+    font-size: 18px;
+    color: red;
+    margin-left: 16px;
+}
+
+.graph-price .pro.plus {
+    color: #05b169;
+}
+
+.graph-menu span {
+    padding: 0px 8px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1;
+    letter-spacing: 0.1em;
+    color: rgba(17, 51, 83, 0.3);
+    transition: color 200ms ease-in-out;
+    cursor: pointer;
+}
+
+.graph-menu span:hover {
+    color: #050f19;
+}
+
+.graph-menu span.selected {
+    color: #1652f0;
+}
+
+#canvas {
+    user-select: none;
+}
+
+#tooltip {
+    opacity: 0;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    border-radius: 5px;
+    transition: all 0.1s ease;
+    pointer-events: none;
+    transform: translate(-50%, 0);
+    text-align: center;
+    padding: 10px 15px;
+}
+
+#tooltip:before {
+    position: absolute;
+    top: 100%;
+    content: ' ';
+    pointer-events: none;
+    background: #1652f0;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    width: 8px;
+    height: 8px;
+    transform: translate(-50%, 20px);
+}
+
+#tooltip:after {
+    position: absolute;
+    top: 100%;
+    content: ' ';
+    pointer-events: none;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.8) transparent transparent;
+    border-width: 5px;
+    margin-left: -5px;
+}
+
+#tooltip .price {
+    margin-bottom: 4px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+}
+
+#tooltip .date {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1;
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.loading {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.isLoading .loading {
+    display: flex;
+}
+
+.graph-heading {
+    padding: 15px 15px 15px 15px;
+    /*	box-shadow: 0px 1px 1px #eeeeee; bitcoin header*/
+    display: flex;
+    align-items: center;
+}
+
+.graph-menu {
+    float: right;
+    width: 60%;
+    text-align: right;
+}
+
+.graph-title {
+    width: 40%;
+    float: left;
+}
+
+.graph-title-h3 {
+    font-size: 5px;
+    margin: 0;
+    color: rgba(17, 49, 79, 0.6);
+}
+
+.graph-title-h4 {
+    font-size: 17px;
+    margin: 0;
+    color: #1c1c1c;
+}
+
+.graph {
+    float: left;
+    width: 100%;
+}
+
+div.waletBalnce {
+    width: 100%;
+    height: max-content;
+}
+
+.balance {
+    margin-bottom: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: min-content;
+}
+
+.recent {
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    flex: 1 1 auto;
+}
+
+div.graph h3 {
+    font-size: 1rem;
+    padding-left: 10px;
+}
+
+div.waletBalnce h3 {
+    font-size: 1.05rem;
+}
+
+div.waletBalnce * {}
+
+div.waletHeading {
+    padding: 20px 20px;
+    background-color: #fff;
+    /*box-shadow: 0px 1px 1px #eeeeee;*/
+    box-shadow: inset 0 -1px #eceff1;
+}
+
+div.waletTitle {
+    width: 50%;
+    float: left;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+div.waletBody {
+    padding: 19px 30px;
+    color: black;
+    overflow: auto;
+}
+
+div.waletBody:hover {
+    background-color: #fff;
+}
+
+div.waletSign {
+    font-size: 17px;
+    font-weight: bold;
+    float: left;
+    margin-top: 4px;
+}
+
+.waletSign span {
+    display: inline-block;
+}
+
+.waletSign img {
+    vertical-align: middle;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+div.waletAmount {
+    float: right;
+    text-align: right;
+    font-weight: bold;
+    color: black;
+}
+
+div.waletAmount p {
+    margin-bottom: 0px;
+}
+
+div.waletAmount p {
+    font-family: inherit;
+}
+
+div.waletFooter {
+    padding: 16px 15px;
+    box-shadow: 0px -1px 1px #eeeeee;
+    text-align: center;
+}
+
+div.waletFooter a {
+    font-size: 15px;
+}
+
+div.buyAmount {
+    line-height: normal;
+}
+
+button.btnBuy {
+    cursor: pointer;
+    width: 100%;
+    padding: 20px;
+    font-size: 25px;
+    margin-top: 5px;
+    border: 0;
+    border-radius: 5px;
+    color: white;
+    background: #255df1;
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+h3.fontSizing {
+    font-weight: 600;
+    line-height: 1;
+    letter-spacing: 0.01em;
+    color: #000;
+}
+
+div.fontsmall,
+span.fontsmall,
+button.fontsmall {
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: 0.001em;
+}
+
+div.card-dash {
+    /*border: 1px solid #eceff1;*/
+    border: 1px solid #cecece !important;
+    border-radius: 4px;
+    box-shadow: rgb(17 51 83 / 2%) 0px 4px 12px 0px !important;
+    -webkit-box-shadow: none;
+}
+
+
+/**/
+
+div.icons-panel {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+}
+
+.icons-panel>a {
+    width: 100%;
+}
+
+.icons-panel>a:hover {
+    background-color: #f7fafc;
+}
+
+.icons-panel .waletBody {
+    padding: 20px 30px;
+}
+
+.icons-panel .waletSign {
+    margin: 0px;
+}
+
+.icons-panel svg,
+.icons-panel img {
+    margin-right: 15px;
+    width: 40px;
+    border-radius: 50%;
+}
+
+
+/**/
+
+.recent,
+.waletBalnce.secondbox {
+    min-width: 500px;
+}
+
+a,
+[role='button'] {
+    text-decoration: none;
+    cursor: pointer;
+    color: rgb(22, 82, 240);
+    font-weight: 550;
+}
+
+.row-recent {
+    position: relative;
+    flex: 1 1 0%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.row-recentNew {
+    position: relative;
+    flex: 1 1 0%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border: 1px solid #cecece !important;
+}
+
+.recent>.row-recent {
+    overflow-y: auto;
+    height: 100%;
+    flex: 1 1 auto;
+}
+
+.recent>.row-recentNew {
+    overflow-y: auto;
+    height: 100%;
+    flex: 1 1 auto;
+}
+
+.col-recent {
+    flex-direction: column;
+    position: relative;
+    opacity: 1;
+    display: flex;
+    height: 100%;
+}
+
+.center-recent {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    width: 100%;
+    min-height: 45px;
+}
+
+.activity-empty {
+    display: flex;
+    color: #778;
+    font-size: 15px;
+    margin: auto;
+}
+
+.activity-empty div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.activity-empty .icon {
+    width: 100%;
+    margin-bottom: 15px;
+    margin-right: 0px;
+}
+
+.activity-empty .icon img {
+    width: 130px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.activity-empty div.text {
+    display: flex;
+    flex-direction: row;
+}
+
+.activity-empty div.text span {
+    margin-right: 5px;
+}
+
+.aside {
+    padding: 23px;
+    margin-bottom: 0;
+    box-sizing: border-box;
+    border-bottom: 1px solid rgb(236, 239, 241) !important;
+    border-radius: 0;
+}
+
+.aside:last-child {
+    border-bottom: none;
+}
+
+aside:hover {
+    background: #f7fafc;
+    cursor: pointer;
+}
+
+.jvpxll {
+    flex: 0 0 auto;
+    width: 45px;
+    height: 45px;
+    margin-right: 15px;
+    border-radius: 100px;
+    margin-left: 12px;
+}
+
+.kvilOX {
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+}
+
+.gTbYCC {
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.kBzJqa {
+    margin: 0;
+    line-height: 1.3;
+    color: rgb(5, 15, 25);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.kBzJqb {
+    margin: 0;
+    line-height: 1.3;
+    color: rgb(5, 15, 25);
+    font-size: 16px;
+    font-weight: 600;
+}
+
+constructed stylesheet .cicsNy {
+    display: block;
+    margin: 0px;
+}
+
+.gTbYCC {
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.iNHHmI {
+    margin: 0;
+    font-family: inherit;
+    font-size: 14px !important;
+    line-height: 1.6 !important;
+    font-weight: 400 !important;
+    color: rgba(17, 51, 83, 0.6) !important;
+}
+
+.f_box {
+    max-width: 50px;
+}
+
+.text-center {
+    text-align: center;
+    justify-content: center;
+}
+
+.iNHHmI.smaller-font {
+    font-size: 0.9rem !important;
+    margin-top: 3px;
+    width: 50%;
+}
+
+.grid-container {
+    display: block;
+    padding-bottom: 20px;
+}
+
+.grid-container .grid-item {
+    margin-bottom: 20px;
+}
+
+@media only screen and (min-width: 600px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: minmax(500px, 1fr) 500px;
+        grid-gap: 20px 20px;
+    }
+    .grid-container .grid-item {
+        margin-bottom: 0px;
+    }
+    .recent>.row-recent {
+        height: 100px;
+    }
+    .grid-item.graph {
+        order: 0;
+    }
+    .grid-item.info {
+        order: 2;
+    }
+    .grid-item.col-side {
+        order: 1;
+        max-height: 340px;
+    }
+    .grid-item.icons-panel {
+        order: 3;
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+.card {
+    padding-bottom: 1em;
+}
+
+.card h5 {
+    letter-spacing: 0.13em;
+    margin-bottom: 1em;
+}
+
+.card p {
+    line-height: 1.5em;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+    letter-spacing: 0em;
+}
+
+.card.waletBody {
+    margin-left: -0.5em;
+}
+
+.text-grey {
+    color: #1a1f36;
+}
+
+.list-item {
+    height: min-content;
+    font-size: 15px;
+}
+
+.icon {
+    vertical-align: middle;
+    display: inline-block;
+    margin: 0px 0.4em 0px 0px;
+    padding: 0px 0px 0px 0px;
+}
+
+.icon-size-2 {
+    width: 1.4em;
+    height: auto;
+    fill: grey;
+    background: white;
+}
+
+.icon-size-3 {
+    width: 6em;
+    height: auto;
+}
+
+.label {
+    display: inline-block;
+}
+
+#main-wrapper.show {
+    /* This fixes modal covered by backdrop in index */
+    position: static;
+}
+
+.modal-title {
+    color: #000;
+    font-weight: 600;
+    font-size: 17px;
+}
+
+#activityDetailsModal .modal-content {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+#activityDetailsModal .modal-header {
+    display: inline-block;
+}
+
+#activityDetailsModal .modal-body .trans_icons {
+    text-align: center;
+}
+
+.trans_icons img {
+    width: 70px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#activityDetailsModal .modal-footer {
+    display: table;
+    padding: 10px;
+    width: 100%;
+}
+
+#activityDetailsModal aside {
+    padding: 15px 15px 10px 15px;
+    box-shadow: inset 0 -1px #e3e8ee;
+    display: flex;
+    justify-content: space-between;
+}
+
+#activityDetailsModal aside.last {
+    border-bottom: none;
+}
+
+#activityDetailsModal h4 {
+    display: block;
+}
+
+#activityDetailsModal h4.label {
+    padding: 0px;
+    color: #888;
+}
+
+.success_badge {
+    background: #d6f0bf;
+    color: #5ba52c;
+    padding: 5px 10px;
+}
+
+
+/* Dropdown Button */
+
+.dropbtn {
+    background-color: #3498db;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+
+/* Dropdown button on hover & focus */
+
+.dropbtn:hover,
+.dropbtn:focus {
+    background-color: #2980b9;
+}
+
+
+/* The container <div> - needed to position the dropdown content */
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+
+/* Dropdown Content (Hidden by Default) */
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+
+/* Links inside the dropdown */
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+
+/* Change color of dropdown links on hover */
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+
+.show {
+    display: block;
+}

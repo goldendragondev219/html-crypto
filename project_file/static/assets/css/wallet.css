@@ -1,0 +1,775 @@
+.page_title {
+	padding: 45px 0px 5px 0px;
+	margin-bottom: 0px;
+}
+.page_title > div {
+	padding: 0px 100px ;
+}
+
+.wallet-title-container {
+	color: #040404;
+	margin: 0px 10px;
+	display: flex;
+	flex-direction: column;
+}
+.wallet-title-container .title-header {
+	display: flex;
+	margin-bottom: 30px;
+	align-items: center;
+}
+.wallet-title-logo img {
+	width: 34px;
+}
+.wallet-title {
+	font-size: 33px;
+	font-weight: 500;
+	line-height: 38px;
+	margin-left: 0em;
+	margin-right: 0.4em;
+}
+
+.wallet-title-container .panel {
+	display: flex;
+	flex-direction: row;
+}
+.wallet-title-container .panel .panel-item {
+	padding-right: 0px;
+}
+.wallet-title-container .panel .panel-item.btc-balance {
+	border-right: 1px solid rgba(238, 238, 238);
+	min-width: 220px;
+	margin-right: 40px;
+}
+.wallet-title-container .panel .panel-item .label {
+	font-size: 14px;
+	padding: 0px;
+	margin: 0px;
+	margin-bottom: 15px;
+	letter-spacing: 0px;
+	color: rgba(17, 51, 83, 0.6);
+	font-weight: 500;
+}
+.wallet-title-container .panel .panel-item .value {
+	font-size: 33px;
+}
+.wallet-title-container div.filler {
+	flex-grow: 1;
+}
+.wallet-title-container .panel .panel-item.buttons .button {
+	display: flex;
+	/*border: 1px solid #e3e8ee;*/
+	border: 1px solid #cccccc;
+	border-radius: 4px;
+	width: 170px;
+	margin-bottom: 10px;
+}
+.wallet-title-container .panel .panel-item.buttons .button:last-child {
+	margin-bottom: 0px;
+	box-shadow: rgb(17 51 83 / 2%) 0px 4px 12px 0px !important;
+	background:#fff !important;
+	border: 1px solid rgb(236, 239, 241) !important;
+	border-radius:4px;
+}
+.wallet-title-container .panel .panel-item.buttons .button.send {
+	box-shadow: rgb(17 51 83 / 2%) 0px 4px 12px 0px !important;
+	background:#fff !important;
+	border: 1px solid rgb(236, 239, 241) !important;
+	border-radius:4px;
+}
+.wallet-title-container .panel .panel-item.buttons a {
+	width: 100%;
+}
+.wallet-title-container .panel .panel-item.buttons a div {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding: 0.5em 1em;
+	color: #2056e7;
+	border: 1px solid #2056e7;
+	border-radius:5px;
+}
+.wallet-title-container .panel .panel-item.buttons a div span {
+	margin: 0px auto;
+	font-size: 12.5px;
+	letter-spacing: 1px;
+	font-weight: bold;
+}
+.wallet-title-container .panel .panel-item.buttons .button.send span {
+	color: #000;
+}
+
+/**/
+.homepage .tabs {
+	display: flex;
+	flex-direction: row;
+	padding-left: 25px;
+	padding-right: 40px;
+	box-shadow: inset 0 -1px #e3e8ee;
+	margin-bottom: 35px;
+	font-size: 17px;
+}
+.homepage .tabs > div {
+	padding-bottom: 10px;
+	padding-top: 10px;
+	margin-left: 25px;
+	margin-right: 10px;
+}
+.homepage .tabs > div > a:visited,
+.homepage .tabs > div > a {
+	color: #697386;
+}
+
+.homepage .tabs > div.active {
+	box-shadow: inset 0 -2px #5469d4;
+}
+.homepage .tabs > div.active > a:visited,
+.homepage .tabs > div.active > a {
+	color: #1a1f36;
+}
+
+/**/
+.homepage .col-container {
+	margin-left:auto;
+	margin-right:auto;
+}
+.homepage .balance-title {
+	font-weight: 600;
+}
+
+.waletBalnce > .row-recent > .col-recent {
+	max-height: 1500px;
+	overflow-x: hidden; /* Hide horizontal scrollbar */
+	overflow-y: scroll; /* Add vertical scrollbar */
+	min-height: 450px;
+}
+
+.aside {
+	padding-top: 16px;
+	padding-bottom: 16px;
+}
+
+/**/
+.col-side {
+	min-width: 400px;
+}
+
+.wallet-button {
+	display: inline-block;
+	width: 49.2%;
+}
+.wallet-button > button {
+	width: 100%;
+}
+.wallet-button > button > * {
+	display: inline;
+}
+
+.wallet-button > button > img {
+	width: 28px;
+	margin-right: 10px;
+}
+
+div.waletBalnce {
+	margin-top: 0px;
+}
+div.waletBalnce .waletHeading {
+	padding: 16px 20px;
+}
+div.waletBalnce .waletBody{
+	padding: 16px 20px;
+	font-size: 15px;
+}
+div.waletBalnce .waletFooter {
+	padding: 12px 20px;
+	text-align: left;
+}
+
+div.waletBalnce .waletFooter a * {
+	display: inline-block;
+}
+div.waletBalnce .waletFooter a img {
+	width: 40px;
+}
+
+div.waletBalnce .waletFooter span {
+	margin-left: 0.8em;
+	margin-right: 0.8em;
+	font-size: 17px;
+	color: #000;
+}
+
+
+
+/* Modal windows */
+
+.show {
+	/*overflow: hidden !important;*/
+}
+
+.modal-dialog {
+	min-width: 500px;
+}
+
+/* Chrome, Safari, Edge, Opera */
+.modal-dialog input::-webkit-outer-spin-button,
+.modal-dialog input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+.modal-dialog input[type=number] {
+  -moz-appearance: textfield;
+}
+
+
+
+/* Modal: Receive */
+
+#sendModal div {
+	color: #555;
+}
+#sendModal .modal-dialog {
+	min-width: 550px !important;
+	max-width: 550px !important;
+	width: 550px !important;
+}
+
+#sendModal .col {
+	padding-left: 0px;
+	padding-right: 0px;
+}
+#sendModal .row {
+	margin-left: 0px;
+	margin-right: 0px;
+}
+
+#sendModal .modal-header {
+	border: none;
+	color: #555;
+	padding-bottom: 20px;
+}
+
+#sendModal .modal-body {
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+
+#sendModal .balance-container {
+	border-top: 1px solid #ddd;
+	width: 100%;
+	border-bottom: 1px solid #ddd;
+	color: black;
+	font-size: 15px;
+	font-weight: normal;
+	padding-top: 16px;
+	padding-bottom: 15px;
+}
+#sendModal .balance-container .disclaimer {
+	font-size: 12px;
+	color: #37e;
+	background-color: #f7fafc;
+	border-radius: 5px;
+	padding: 10px 20px;
+	margin-bottom: 15px;
+	line-height: 20px;
+}
+#sendModal .balance-container .disclaimer a {
+	text-decoration: underline;
+}
+
+#sendModal .balance-label {
+	float: left;
+}
+#sendModal .balance-amount {
+	float: right;
+	color: #37e;
+}
+#sendModal .balance-amount * {
+	display: inline;
+	vertical-align: middle;
+}
+
+#sendModal .balance-amount img {
+	width: 22px;
+}
+
+#sendModal .withdraw-details {
+	width: 100%;
+	border-bottom: 1px solid #ddd;
+}
+#sendModal .withdraw-details .label {
+	font-size: 10px;
+	font-weight: bold;
+	color: #888;
+	margin-top: 15px;
+	margin-bottom: 5px;
+	padding: 0px;
+	letter-spacing: 1px;
+}
+#sendModal .withdraw-details .label span {
+	padding: 0px;
+}
+#sendModal .withdraw-amount .row .amount-btc,
+#sendModal .withdraw-amount .row .amount-usd {
+	width: 45%;
+	background-color: rgb(247, 248, 250);
+	font-size: 14px;
+	font-weight: bold;
+	border:none;
+	border-radius:15px;
+
+}
+#sendModal .withdraw-amount .row .swap-currency {
+	width: 10%;
+	padding: 8px 8px;
+}
+#sendModal .withdraw-details input {
+	background-color: #f7fafc;
+	border: none;
+	border-right: 1px solid #ccc;
+	height: 44px;
+	font-size: 14px;
+	width: 70%;
+	padding-left: 10px;
+	padding-right: 10px;
+	border-radius:15px;
+}
+#sendModal .withdraw-details input:focus {
+        box-shadow: 0px 0px 1px 3px #a8ceea;
+}
+
+#sendModal .withdraw-amount span {
+	width: 30%;
+	padding-left: 8px;
+	padding-right: 8px;
+	margin-left: auto;
+	margin-right: auto;
+	height: 40px;
+}
+#sendModal .withdraw-details .address-input input {
+	text-align: left;
+	width: 95%;
+	border: none;
+	border-radius:10px;
+}
+#sendModal .withdraw-details .address-info {
+	font-size: 12px;
+	margin-top: 5px;
+	margin-bottom: 15px;
+	color: #888;
+}
+
+#sendModal .totals {
+	width: 100%;
+	border-bottom: 1px solid #ddd;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	font-size: 14px;
+	color: black;
+}
+#sendModal .totals .fee-amount {
+	color: #888;
+}
+
+#sendModal .totals > div {
+	width: 100%;
+	padding-top: 4px;
+	padding-bottom: 4px;
+
+}
+#sendModal .totals .fee-label * {
+	display: inline;
+	vertical-align: middle;
+}
+#sendModal .totals .fee img {
+	width: 14px;
+}
+
+
+#sendModal .modal-footer {
+	border: none;
+}
+#sendModal .modal-footer button {
+	width: 200px;
+}
+
+
+
+
+/* Modal: Confirm Send */
+
+#confirmSendModal {
+	font-size: 12px;
+	color: #555;
+}
+
+#confirmSendModal .modal-header {
+	border-color: #ddd;
+}
+
+.trans-details div {
+	margin-bottom: 20px;
+}
+
+#confirmSendModal .modal-body {
+	padding: 10px 20px;
+}
+
+#confirmSendModal .grid-label {
+	margin-bottom: 12px;
+}
+
+#confirmSendModal .grid {
+	display: flex;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	margin-bottom: 25px;
+}
+
+/* Columns */
+#confirmSendModal .grid .col {
+	float: left;
+	width: max-content;
+	margin: 0px;
+	padding: 0px 0px;
+}
+#confirmSendModal .grid .col.title {
+	flex-grow: 0;
+	border-right: 1px solid #ddd;
+	background-color: #f8f8f9;
+}
+#confirmSendModal .grid .col.details {
+	font-size: 14px;
+	border-right: none;
+}
+
+/* Rows */
+#confirmSendModal .grid .row {
+	margin: 0px;
+	border-bottom: 1px solid #ddd;
+	padding: 11px 11px;
+}
+#confirmSendModal .grid .row.title {
+	flex-grow: 1;
+	width: 120px;
+	font-weight: bold;
+}
+
+#confirmSendModal .grid .row.title img {
+	width: 14px;
+	margin-left: 5px;
+}
+
+#confirmSendModal .grid .row .details {
+	width: 100%;
+}
+
+#confirmSendModal .grid .row:last-row {
+	border-bottom: none;
+}
+
+#confirmSendModal .grid .row.last-row {
+	border-bottom: none;
+}
+
+
+#confirmSendModal .tsv {
+	border-top: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+	background-color: #f8f8f9;
+	margin-bottom: 0px;
+	padding-top: 10px;
+}
+
+#confirmSendModal .tsv > div {
+	margin: 6px auto;
+}
+
+#confirmSendModal .tsv div div {
+	display: inline-block;
+	vertical-align: middle;
+	border: 1px solid #bbb;
+	border-radius: 5px;
+	padding: 11px;
+	height: 76px;
+	background-color: white;
+	margin-right: 8px;
+	margin-bottom: 15px;
+}
+#confirmSendModal .tsv div div input {
+	vertical-align: middle;
+	line-height: 52px;
+	border: none;
+	font-size: 18px;
+	width: 120px;
+	font-style: monospace;
+	letter-spacing: 3px;
+	color: #888;
+	padding-left: 10px;
+}
+
+
+#confirmSendModal .modal-footer {
+	border-top: none;
+	padding-top: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+#confirmSendModal .modal-footer.container{
+	padding-left: 10px !important;
+	padding-right: 10px !important;
+}
+
+#confirmSendModal .modal-footer .row {
+	margin: 0px;
+	width: 100%;
+	margin-bottom: -5px;
+}
+
+#confirmSendModal .modal-footer .col {
+	box-sizing: border-box;
+	width: 100%;
+	margin: 0px;
+	padding: 5px;
+}
+#confirmSendModal .modal-footer button {
+	width: 100%;
+	margin-bottom: 0px;
+}
+#confirmSendModal .modal-footer button.cancel {
+	color: #555;
+	border-color: #ddd !important;
+}
+
+
+/* Modal: Receive */
+#receiveModal .modal-header {
+	border-color: #ccc;
+}
+#receiveModal .qrcode {
+	margin: 20px auto;
+}
+#receiveModal .btc-address {
+	margin: 10px auto;
+}
+#receiveModal .btc-address input {
+	line-height: 50px;
+	font-size: 14.6px;
+	font-family: monospace;
+	outline: none !important;
+	width: 400px;
+	height: 55px;
+	background-color: #f9f9f9;
+}
+#receiveModal .btc-address input:focus {
+	outline: none;
+	box-shadow: none;
+	border-color: #ccc;
+}
+#receiveModal .btc-address button.btn {
+	padding: 5px 15px;
+	border-color: #ccc;
+	min-width: initial;
+	background-color: #f9f9f9;
+}
+#receiveModal .btc-address button.btn:active {
+	fill: black;
+	border-color: black;
+	box-shadow: 0 0 0 2px rgba(0, 0, 0, .5);
+}
+#receiveModal .btc-address img,
+#receiveModal .btc-address svg {
+	padding: 0px;
+	width: 28px;
+	margin: 0px;
+	fill: #888;
+	transition: color 0.1s;
+}
+#receiveModal .warning {
+	padding: 15px;
+	color: black;
+	background-color: #ffbb00;
+	width: 100%;
+	border-radius: 5px;
+	text-align: center;
+}
+#receiveModal .warning img,
+#receiveModal .warning svg {
+	margin: 0px auto;
+	width: 40px;
+	height: 40px;
+}
+#receiveModal .warning span {
+	font-size: 18px;
+	font-weight: 400;
+	margin: 15px auto 10px auto;
+}
+#receiveModal .warning p {
+	color: black;
+	font-size: 14px;
+}
+
+
+
+
+#linkModal div {
+	color: #555;
+}
+#linkModal .modal-dialog {
+	min-width: 450px !important;
+	max-width: 450px !important;
+	width: 450px !important;
+}
+
+#linkModal .col {
+	padding-left: 0px;
+	padding-right: 0px;
+}
+#linkModal .row {
+	linkModal-left: 0px;
+	margin-right: 0px;
+}
+
+#linkModal .modal-header {
+	border: none;
+	color: #555;
+	padding-bottom: 20px;
+}
+
+#linkModal .modal-body {
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+
+#linkModal .balance-container {
+	border-top: 1px solid #ddd;
+	width: 100%;
+	border-bottom: 1px solid #ddd;
+	color: black;
+	font-size: 15px;
+	font-weight: normal;
+	padding-top: 16px;
+	padding-bottom: 15px;
+}
+#linkModal .balance-container .disclaimer {
+	font-size: 12px;
+	color: #37e;
+	background-color: #fafafa;
+	border-radius: 5px;
+	padding: 10px 20px;
+	margin-bottom: 15px;
+	line-height: 20px;
+}
+#linkModal .balance-container .disclaimer a {
+	text-decoration: underline;
+}
+
+#linkModal .balance-label {
+	float: left;
+}
+#linkModal .balance-amount {
+	float: right;
+	color: #37e;
+}
+#linkModal .balance-amount * {
+	display: inline;
+	vertical-align: middle;
+}
+
+#linkModal .balance-amount img {
+	width: 22px;
+}
+
+#linkModal .withdraw-details {
+	width: 100%;
+	border-bottom: 1px solid #ddd;
+}
+#linkModal .withdraw-details .label {
+	font-size: 10px;
+	font-weight: bold;
+	color: #888;
+	margin-top: 15px;
+	margin-bottom: 5px;
+	padding: 0px;
+	letter-spacing: 1px;
+}
+#linkModal .withdraw-details .label span {
+	padding: 0px;
+}
+#linkModal .withdraw-amount .row .amount-btc,
+#linkModal .withdraw-amount .row .amount-usd {
+	width: 45%;
+	background-color: #f0f0f8;
+	font-size: 14px;
+	font-weight: bold;
+
+}
+#linkModal .withdraw-amount .row .swap-currency {
+	width: 10%;
+	padding: 8px 8px;
+}
+#linkModal .withdraw-details input {
+	background-color: #f0f0f8;
+	border: none;
+	border-right: 1px solid #ccc;
+	height: 44px;
+	font-size: 14px;
+	width: 70%;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+#linkModal .withdraw-amount span {
+	width: 30%;
+	padding-left: 8px;
+	padding-right: 8px;
+	margin-left: auto;
+	margin-right: auto;
+	height: 40px;
+}
+#linkModal .withdraw-details .address-input input {
+	text-align: left;
+	width: 95%;
+	border: none;
+}
+#linkModal .withdraw-details .address-info {
+	font-size: 12px;
+	margin-top: 5px;
+	margin-bottom: 15px;
+	color: #888;
+}
+
+#linkModal .totals {
+	width: 100%;
+	border-bottom: 1px solid #ddd;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	font-size: 14px;
+	color: black;
+}
+#linkModal .totals .fee-amount {
+	color: #888;
+}
+
+#linkModal .totals > div {
+	width: 100%;
+	padding-top: 4px;
+	padding-bottom: 4px;
+
+}
+#linkModal .totals .fee-label * {
+	display: inline;
+	vertical-align: middle;
+}
+#linkModal .totals .fee img {
+	width: 14px;
+}
+
+
+#linkModal .modal-footer {
+	border: none;
+}
+#linkModal .modal-footer button {
+	width: 200px;
+}

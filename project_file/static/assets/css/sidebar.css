@@ -1,0 +1,307 @@
+#sidebar {
+	font-size: 15px;
+	line-height: 20px;
+	color: #000;
+	padding: 25px 12px 20px 15px;
+	height:100%;
+}
+#sidebar.pcoded-navbar {
+	box-shadow: none;
+	border-right: 1px solid #cecece;
+}
+
+#sidebar > div.navbar-header {
+	margin-bottom: 30px;
+}
+#sidebar > div.navbar-header div.button-container > button {
+	width: 100%;
+	background-color: transparent;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+#sidebar .navbar-header button span {
+	font-size: 21px;
+}
+
+#sidebar .navbar-header .button-content {
+	align-items: center;
+	display: flex;
+	flex-direction: row;
+}
+#sidebar .navbar-header div.pcoded-mtext {
+	display: flex;
+}
+#sidebar .navbar-header div.pcoded-micon {
+	display: flex;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	box-shadow: 0 2px 5px 0 rgba(60,66,87,.08),0 1px 1px 0 rgba(0,0,0,.12);
+	justify-content: center;
+	margin-right: 8px;
+	background-color: white;
+	vertical-align: middle;
+}
+#sidebar .navbar-header img,
+#sidebar .navbar-header svg {
+	margin: auto;
+	vertical-align: bottom;
+	fill: #a3acb9;
+}
+#sidebar .navbar-header div.down-arrow {
+	display: flex;
+	height: 24px;
+	margin-left: 8px;
+}
+#sidebar .navbar-header div.down-arrow img {
+	width: 10px;
+	height: 10px;
+	margin: auto;
+}
+
+/****************************/
+#navbarSel {
+	height: 0px;
+	position: fixed;
+	top: 21px;
+	left: 10px;
+	z-index: 1030;
+	border-radius: 4px;
+	background-color: white;
+	width: 250px;
+	overflow:hidden;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
+}
+#navbarSel:focus {
+	height: auto;
+}
+#navbarSel .container {
+	padding: 4px;
+}
+#navbarSel .container:hover {
+	background-color: #5469d4;
+}
+#navbarSel .container:hover span {
+	color: white;
+}
+#navbarSel .container a {
+	width: 100%;
+}
+#navbarSel .container a .content {
+	display: flex;
+}
+#navbarSel .container a .content .icon {
+	display: flex;
+	width: 28px;
+	height: 28px;
+	margin-left: 10px;
+	margin-right: 8px;
+	border-radius: 50%;
+	background-color: white;
+}
+#navbarSel .container a .content .icon svg {
+	width: 16px;
+	height: 16px;
+	margin: auto;
+	fill: #a3acb9;
+}
+#navbarSel .container a .content .text {
+	display: flex;
+	vertical-align: middle;
+}
+#navbarSel .container a .content .text span {
+	font-size: 16px;
+	line-height: 28px;
+}
+/****************************/
+
+#sidebar a {
+	color: #1a1f36;
+	font-weight:700;
+	font-size:15px;
+}
+#sidebar .nav-item .pcoded-menu-caption {
+	color: #5469d4;
+}
+#sidebar .navbar-content ul {
+	margin-top: 0px;
+}
+#sidebar.pcoded-navbar .pcoded-inner-navbar li.pcoded-menu-caption {
+	color: #446;
+	padding: 5px 0px;
+}
+#sidebar .navbar-content ul a {
+	margin: 0px;
+	padding: 0px;
+	vertical-align: middle;
+}
+#sidebar .navbar-content .nav-item .nav-link > div {
+	display: flex;
+	width: 100%;
+	padding: 5px;
+	align-items: center;
+}
+
+#sidebar .navbar-content ul div.pcoded-micon {
+	display: flex;
+	padding: 2px;
+	margin-right: 3px;
+	width: auto;
+	height: min-content;
+	background-color:rgb(241, 243, 245);
+	border-radius:50%;
+	height:35px;
+	width:35px;
+	margin-right:0px !important;
+}
+#sidebar .navbar-content ul div.pcoded-micon div.icon {
+	/*width: 16px;*/
+	/*height: 16px;*/
+	margin:auto;
+	width: 24px;
+	height: 24px;
+	/*width: 32px;*/
+	/*height: 32px;*/
+}
+#sidebar .navbar-content ul li:hover:not(.active) div.pcoded-micon div.icon {
+	filter: brightness(90%);
+}
+#sidebar .navbar-content ul div.pcoded-mtext {
+	padding: 0px;
+	margin-left:5px;
+}
+
+#sidebar .navbar-content ul div.pcoded-micon div.home.icon-gray {
+	background-image: url(/static/assets/ex-icons/sidebar/home-grayscale.svg);
+		margin:auto;
+
+}
+#sidebar .navbar-content ul div.pcoded-micon div.wallet.icon-gray {
+	background-image: url(/static/assets/ex-icons/sidebar/wallet-grayscale.svg);
+		margin:auto;
+
+}
+#sidebar .navbar-content ul div.pcoded-micon div.payments.icon-gray {
+	background-image: url(/static/assets/ex-icons/sidebar/payments-grayscale.svg);
+		margin:auto;
+
+}
+#sidebar .navbar-content ul div.pcoded-micon div.pages.icon-gray {
+	background-image: url(/static/assets/ex-icons/sidebar/pages-grayscale.svg);
+		margin:auto;
+
+}
+#sidebar .navbar-content ul div.pcoded-micon div.widget.icon-gray {
+	background-image: url(/static/assets/ex-icons/sidebar/widget-grayscale.svg);
+		margin:auto;
+
+}
+#sidebar .navbar-content ul div.pcoded-micon div.shop.icon-gray {
+	background-image: url(/static/assets/ex-icons/sidebar/shop-grayscale.svg);
+	margin:auto;
+}
+#sidebar .navbar-content ul div.pcoded-micon div.invoices.icon-gray {
+	background-image: url(/static/assets/ex-icons/sidebar/invoices-grayscale.svg);
+		margin:auto;
+
+}
+#sidebar .navbar-content ul div.pcoded-micon div.developers.icon-gray {
+	background-image: url(/static/assets/ex-icons/sidebar/developers-grayscale.svg);
+		margin:auto;
+
+}
+#sidebar .navbar-content ul div.pcoded-micon div.settings.icon-gray {
+	background-image: url(/static/assets/ex-icons/sidebar/settings-grayscale.svg);
+		margin:auto;
+
+}
+
+#sidebar .navbar-content ul div.pcoded-micon div.home.icon-color {
+	background-image: url(/static/assets/ex-icons/sidebar/home.svg);
+		margin:auto;
+
+}
+#sidebar .navbar-content ul div.pcoded-micon div.wallet.icon-color {
+	background-image: url(/static/assets/ex-icons/sidebar/wallet.svg);
+		margin:auto;
+
+}
+#sidebar .navbar-content ul div.pcoded-micon div.payments.icon-color {
+	background-image: url(/static/assets/ex-icons/sidebar/payments.svg);
+		margin:auto;
+
+}
+
+#sidebar .navbar-content ul div.pcoded-micon div.pages.icon-color {
+	background-image: url(/static/assets/ex-icons/sidebar/pages.svg);
+		margin:auto;
+
+}
+#sidebar .navbar-content ul div.pcoded-micon div.widget.icon-color {
+	background-image: url(/static/assets/ex-icons/sidebar/widget.svg);
+		margin:auto;
+
+}
+#sidebar .navbar-content ul div.pcoded-micon div.shop.icon-color {
+	background-image: url(/static/assets/ex-icons/sidebar/shop.svg);
+		margin:auto;
+
+}
+#sidebar .navbar-content ul div.pcoded-micon div.invoices.icon-color {
+	background-image: url(/static/assets/ex-icons/sidebar/invoices.svg);
+		margin:auto;
+
+}
+#sidebar .navbar-content ul div.pcoded-micon div.developers.icon-color {
+	background-image: url(/static/assets/ex-icons/sidebar/developers.svg);
+		margin:auto;
+
+}
+#sidebar .navbar-content ul div.pcoded-micon div.settings.icon-color {
+	background-image: url(/static/assets/ex-icons/sidebar/settings.svg);
+		margin:auto;
+
+}
+
+#sidebar ul li.active .icon-gray {
+	display: none;
+}
+#sidebar ul li:not(.active) .icon-gray {
+	display: block;
+}
+#sidebar ul li.active .icon-color {
+	display: block;
+}
+#sidebar ul li:not(.active) .icon-color {
+	display: none;
+}
+
+/* Handle active nav-item */
+#sidebar li.arrange.active > a {
+	color: #2056e7;
+	font-weight: bold;
+}
+#sidebar.pcoded-navbar .pcoded-inner-navbar > li.active:after {
+	display: none;
+}
+
+#sidebar li.arrange.expanded .expandable,
+#sidebar li.arrange.active .expandable {
+	height: auto;
+}
+
+#sidebar .expandable {
+	display: flex;
+	overflow: hidden;
+	height: 0px;
+}
+#sidebar ul.ul-child {
+	margin-top: 0px;
+	margin-bottom: 8px;
+}
+#sidebar ul.ul-child li {
+	margin-left: 33px;
+	padding: 6px 0px;
+}
+

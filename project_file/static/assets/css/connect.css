@@ -1,0 +1,187 @@
+.homepage {
+	display: flex; 
+	font-size: 15px;
+	line-height: 20px;
+	color: #3c4257;
+}
+
+.col-filler.dash-pad {
+	display: flex;
+}
+#connect.card {
+	display: flex;
+	width: 100%;
+}
+#connect.card > .card-body {
+	padding: 32px;
+	min-height: 250px;
+}
+#connect.card > .card-body > .header {
+	position: static;
+	display: flex;
+	align-items:center;
+	margin-bottom: 38px;
+}
+#connect.card > .card-body > .header .img {
+	margin-right: 12px;
+}
+#connect.card > .card-body > .header span {
+	color: rgb(2, 156, 214);
+	font-weight: 600;
+	font-size: 13.8px;
+	letter-spacing: 0.05em;
+}
+#connect.card > .card-body > .box > .title {
+	font-size: 32px;
+	line-height: 40px;
+}
+#connect.card > .card-body > .box > .paragraph {
+	margin-top: 25px;
+	max-width: 650px;
+	margin-bottom: 4px;
+}
+#connect.card > .card-body > .box > .button {
+	margin-top: 16px;
+}
+#connect.card > .card-body > .box > .button button {
+	background-color: #32325d;
+	box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.12) 0px 1px 1px 0px, #32325d 0px 0px 0px 1px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(60, 66, 87, 0.08) 0px 2px 5px 0px;
+	border-radius: 4px;
+	min-height: 28px;
+	color: white;
+	width: max-content;
+	padding-left: 8px;
+	padding-right: 8px;
+}
+
+#connect.card > .card-footer {
+	background-color: #f5faff;
+	padding: 32px;
+	display: flex;
+	flex-direction: row;
+}
+#connect.card > .card-footer > .box {
+	margin-right: 48px;
+	max-width:400px;
+}
+#connect.card > .card-footer > .box:last-child {
+	margin-right: 0px;
+}
+#connect.card > .card-footer > .box > .title {
+	font-size: 16px;
+	line-height: 24px;
+	margin-bottom: 8px;
+}
+#connect.card > .card-footer > .box > .paragraph {
+	margin-bottom: 24px;
+}
+#connect.card > .card-footer > .box > .link-container > a span {
+	color: #5469d4;
+}
+#connect.card > .card-footer > .box > .link-container > a svg {
+	fill: #5469d4;
+}
+#connect.card > .card-footer > .box > .link-container > a:hover span {
+	color: #3c4257;
+}
+#connect.card > .card-footer > .box > .link-container > a:hover svg {
+	fill: #3c4257;
+}
+
+
+/* Modals */
+#storeLink {
+	font-size: 14px;
+	color: #3c4257;
+}
+#storeLink .modal-content {
+	box-shadow: 0 7px 14px 0 rgba(60,66,87,.08),0 3px 6px 0 rgba(0,0,0,.12);
+}
+#storeLink .row {
+	margin: 0px;
+}
+#storeLink .modal-header {
+	display: flex;
+	font-size: 17px;
+	line-height: 24px;
+	padding: 16px 20px;
+}
+#storeLink .modal-title {
+	margin-left: auto;
+	margin-right: auto;
+}
+#storeLink .modal-header .close {
+	margin-left: 0px;
+}
+#storeLink .modal-body {
+	background-color: #f7fafc;
+	display: flex;
+	flex-direction: column;
+	padding: 20px;
+}
+#storeLink .modal-footer {
+	padding: 15px 20px;
+}
+#storeLink .form-group .form-control {
+	min-height: 28px;
+}
+#storeLink .form-group label {
+	color: #3c4257;
+	display: block;
+	text-align: center;
+	font-size: 18px;
+	margin-bottom: 0px;
+}
+#storeLink .form-group select,
+#storeLink .form-group input {
+	color: #3c4257;
+	font-size: 15px;
+	height: 30px;
+	display: inline-block;
+	border-color: #e3e8ee;
+	padding-left: 8px;
+	background-color: white;
+}
+#storeLink .form-group input::placeholder {
+	color: #c7d2e2;
+	color: #a3acb9;
+}
+#storeLink .form-group input[type=text] {
+	display: inline-block;
+}
+#storeLink .form-group > div {
+	display: flex;
+	flex-direction: row;
+}
+#storeLink .form-group > div > div {
+	width: 49%;
+}
+#storeLink .form-group > div > div:first-child {
+	margin-right: 2%;
+}
+#storeLink .modal-footer {
+	border-top: 1px solid #e3e8ee;
+}
+#storeLink .modal-footer button {
+	padding: 4px 8px;
+	min-width: auto;
+	font-size: 14px;
+	line-height: 20px;
+}
+#storeLink .modal-footer button#cancelAddInvoice {
+	color: #3c4257;
+	border-color: transparent;
+	background-color: rgb(255, 255, 255);
+	box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.12) 0px 1px 1px 0px, rgba(60, 66, 87, 0.16) 0px 0px 0px 1px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(60, 66, 87, 0.08) 0px 2px 5px 0px;
+}
+#storeLink .modal-footer button#addInvoice {
+	background-color: #32325d;
+	box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.12) 0px 1px 1px 0px, #32325d 0px 0px 0px 1px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(60, 66, 87, 0.08) 0px 2px 5px 0px;
+	margin-right: 0px;
+}
+
+
+
+
+
+
